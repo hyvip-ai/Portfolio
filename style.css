@@ -957,7 +957,7 @@ font-family: 'Lemonada', cursive;
     width: 90%;
    top: 5%;
    left: 5%;
-    border: 4px solid white;
+    border: 4px solid lightgray;
     transform: translateZ(60px);
     transform-style: preserve-3d;
     padding-top: 35%;
@@ -968,8 +968,29 @@ font-family: 'Lemonada', cursive;
     background-color: rgb(50, 51, 51);
     transform: rotateY(180deg);
     color: white;
-    padding-top: 33%;
+    padding-top: 25%;
     
+}
+.card-back #github{
+    transform: translateZ(80px);
+    text-decoration: white;
+    /* color: white; */
+    padding: 20px;
+    pointer-events: all;
+   
+    font-size: 50px;
+   text-shadow: 0px 0px 8px rgb(0,0,0);
+
+}
+
+.card-back #github i{
+    transform: translateZ(80px);
+    color: white;
+    /* color: white; */
+    padding: 20px;
+    pointer-events: all;
+   
+    font-size: 50px;
 }
 .cardtitle{
     transform: translateZ(150px);
@@ -992,6 +1013,7 @@ font-family: 'Lemonada', cursive;
     font-weight: bold;
     font-size: 20px;
     pointer-events: none;
+    text-shadow: 0px 0px 8px rgb(0,0,0);
 
 }
 .card-outer:hover .card-inner{
