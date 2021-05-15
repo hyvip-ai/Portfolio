@@ -1193,6 +1193,10 @@ font-family: 'Lemonada', cursive;
     .component {
         padding-top: 48%;
     }
+
+    .floatingnavbtn1 {
+    padding-top: 3px;
+    }
   
 }
 @media (max-width:376px){
