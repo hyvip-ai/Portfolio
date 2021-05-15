@@ -319,6 +319,7 @@ i{
     left: 230px;
     opacity: 0;
     transition: all 0.5s;
+    /* border: 2px solid black; */
 }
 .floatingnav .wrapper .main a{
     text-decoration: none;
@@ -370,7 +371,7 @@ i{
     font-weight: bolder;
    
 }
-.about .coding{
+.abou.codingt {
     overflow: hidden;
    background-repeat: no-repeat;
     
@@ -541,13 +542,16 @@ i{
     font-weight: bolder;
    
 }
+.skill .script .col-6{
+    width: 100%;
+}
 .skills .script .col-6 h1 i{
     font-weight: bolder;
     font-size: 40px;
     
 }
 .skills .script .col-6 h1{
-    font-size: clamp(25px,5vw,30px);
+    font-size: 30px;
     font-family: 'Lemonada', cursive;
     font-weight: bold;
     text-align: center;
@@ -735,7 +739,7 @@ font-family: 'Lemonada', cursive;
     
 }
 .works .head .col-12 h1{
-    font-size: clamp(25px,5vw,30px);
+    font-size: 30px;
     font-family: 'Lemonada', cursive;
     font-weight: bold;
     text-align: center;
@@ -1078,12 +1082,35 @@ font-family: 'Lemonada', cursive;
         
     
     }
+    .skills .scriptname .col-md-3 {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .skills .scriptname .col-md-3 a {
+        font-size: 22px;
+        padding-top: 9px;
+
+    }
+    .skills .script .col-6 h1{
+        font-size: 20px;
+    }
+    .skills .script .col-6 h1 i {
+        font-weight: bolder;
+        font-size: 20px;
+    }
 }
 
-@media(max-width:768px){
+@media(max-width:769px){
     .skills .scriptname .col-md-3{
         margin-bottom: 50px;
     }
+
+    .skills .scriptname{
+    margin-bottom: 0px;
+}
+.component{
+    padding-top: 30%;
+}
 }
 @media(max-width:970px){
     #nav .row .col-1 {
@@ -1094,5 +1121,101 @@ font-family: 'Lemonada', cursive;
     }
     .floatingnavbtn1{
         display: block;
+    }
+}
+
+@media(max-width:498px){
+    .home .row .col-xl-6 .bon{
+        font-size: 45px;
+    }
+    .home .row .col-xl-6 h1{
+        font-size: 24px;
+    }
+    .home .row .col-xl-6 h4{
+        font-size: 24px;
+    }
+    .floatingnavbtn1{
+        height: 45px;
+        width: 45px;
+        font-size: 24px;
+    }
+}
+@media (max-width:476px) {
+    .about .aboutlink {
+        margin-bottom: 50px;
+    }
+    .qualification .qual{
+      
+        margin-bottom: 60px;
+        margin-top: -67px;
+        
+    }
+    .works .head .col-12 h1 {
+        font-size: 15px;
+    }
+ 
+    
+}
+
+@media (max-width:426px){
+    .floatingnav .wrapper .main{
+        left: 253px;
+    }
+    .about .description p{
+        font-size: 12px;
+    }
+    .about .description{
+        margin-top: 60px;
+    }
+    .outer-container .inner .descriptions .cardheading, .outer-container2 .inner2 .descriptions2 .cardheading2, .outer-container3 .inner3 .descriptions3 .cardheading3 {
+        font-size: 15px;
+        font-weight: bolder;
+    }
+    .outer-container .inner .descriptions .cardheading1, .outer-container2 .inner2 .descriptions2 .cardheading21, .outer-container3 .inner3 .descriptions3 .cardheading31 {
+        font-size: 12px;
+    }
+    .outer-container .inner .descriptions .cardpara11, .outer-container .inner .descriptions .cardpara12, .outer-container2 .inner2 .descriptions2 .cardpara21, .outer-container2 .inner2 .descriptions2 .cardpara22, .outer-container3 .inner3 .descriptions3 .cardpara31, .outer-container3 .inner3 .descriptions3 .cardpara32 {
+        font-size: 12px;
+        font-weight: bold;
+    }
+    .outer-container i, .outer-container2 i, .outer-container3 i {
+        font-size: 22px;
+    }
+    .home .imgdiv .des p {
+        font-size: 20px;
+    }
+    .home .imgdiv .des p a{
+        font-size: 30px;
+    }
+    .home .imgdiv .des p {
+        margin-top: 51%;
+    }
+    .component {
+        padding-top: 48%;
+    }
+  
+}
+@media (max-width:376px){
+    .floatingnav .wrapper .main{
+        left: 275px;
+    }
+    .home .imgdiv .des p {
+        margin-top: 64%;
+    }
+}
+
+
+@media (max-width:321px){
+    .floatingnav .wrapper .main{
+        left: 295px;
+    }
+    .about .aboutlink {
+        margin-bottom: 37px;
+    }
+    .home .imgdiv .des p {
+        margin-top: 73%;
+    }
+    .component {
+        padding-top: 58%;
     }
 }
