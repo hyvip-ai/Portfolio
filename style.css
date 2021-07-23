@@ -1120,11 +1120,11 @@ font-family: 'Lemonada', cursive;
     border: 2px solid #ffc400;
 }
 .testiblue{
-    border: 2px solid #1dd1a1;
+    border: 2px solid #00dcff;
 
 }
 .testiblue svg{
-    fill: #1dd1a1;
+    fill: #00dcff;
 }
 .testiyellow svg{
     fill: #ffc400;
