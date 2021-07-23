@@ -1,3 +1,5 @@
+
+
 const tl = new TimelineLite({ paused: true });
 
 tl.fromTo(
@@ -315,3 +317,41 @@ function closemodal() {
   // var img  = document.querySelector(".modalimage")
   // img.src = ``
 }
+$(document).ready(function(){
+
+  var events = [
+    {
+      date:'3/05/2021-3/06/2021',
+      content:'Padhhigh - Content Writer'
+    },
+    {
+      date: '17/05/2021-16/06/2021',
+      content: 'Engineer Diaries - Angular Developer'
+    },
+    {
+      date: '29/05/2020 - 28/06/202',
+      content: 'Srchout - Full Stack Developer'
+    },
+    {
+      date: '17/06/2021 - PRESENT',
+      content: 'Upjao - Full Stack Developer'
+    },
+    
+       
+ 
+  
+ 
+  ];
+
+    $('#my-timeline').roadmap(events, {
+        eventsPerSlide: 4,
+        slide: 1,
+      
+  prevArrow: '<i class="fas fa-angle-left"></i>',
+
+  
+  nextArrow: '<i class="fas fa-angle-right"></i>',
+  orientation:'auto'
+
+    });
+});

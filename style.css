@@ -945,7 +945,7 @@ font-family: 'Lemonada', cursive;
 
 }
 .card-front{
-    background-image: url(./assets/coding.jpg);
+    background-image: url(./assets/code1.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -967,6 +967,11 @@ font-family: 'Lemonada', cursive;
     padding-top: 35%;
 
    
+}
+@media(max-width:992px){
+    .component{
+        padding-top: 28%;
+    }
 }
 .card-back{
     background-color: rgb(50, 51, 51);
@@ -999,14 +1004,14 @@ font-family: 'Lemonada', cursive;
 .cardtitle{
     transform: translateZ(150px);
     pointer-events: none;
-
+    text-shadow: 0px 0px 8px rgba(255,255,255,0.6);
 
     
 }
 .cardsubtitle{
     transform: translateZ(100px);
     pointer-events: none;
-
+    text-shadow: 0px 0px 8px rgba(255,255,255,0.6);
 
 }
 .cardbody{
@@ -1022,6 +1027,228 @@ font-family: 'Lemonada', cursive;
 }
 .card-outer:hover .card-inner{
     transform: rotateY(180deg);
+}
+
+
+.contact{
+    margin-top: 120px;
+   margin-bottom: 50px;
+}
+.contact .contactlink{
+    margin-bottom: 100px;
+}
+.contact .contactlink h1{
+    text-align: center;
+    pointer-events: none;
+}
+.contact .contactlink h1 a{
+    text-decoration: none;
+    font-family: 'Charmonman', cursive;
+    cursor:text;
+    color: #2c3e50;
+    text-align: center;
+    border-bottom: 3px solid #2c3e50;
+    font-weight: bolder;
+   
+}
+.contactbox{
+    width: 100%;
+   margin-bottom: 50px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 25px rgba(0, 0,0, 0.2);
+}
+.contact input,
+.contact textarea{
+    display: block;
+    width: 80%;
+    
+    margin: 20px auto;
+    border-radius: 8px;
+    background:rgb(179, 212, 252);
+    border: none;
+    outline: none;
+    padding: 10px;
+    color: #2c3e50;
+    
+}
+.contact input{
+    height: 40px;
+}
+.send:hover{
+    background: white;
+    color: rgb(2, 21, 78);
+    border: 2px solid rgb(2, 21, 78);
+}
+.contact .formbutton2:hover{
+    color: white;
+    background: rgb(2, 21, 78);
+}
+.contact button{
+    display: block;
+    width: 80%;
+    margin: 20px auto;
+    border: none;
+    outline: none;
+    color: white;
+    text-align: center;
+    font-family: Montserrat,cursive;
+    background: transparent radial-gradient(closest-side at 11% -23%,#4b02ef 0,#4c02f1 0,#4c02f1 0,#3802c3 13%,#29029e 25%,#1c037f 38%,#120367 51%,#0b0357 65%,#07034d 81%,#06044a 100%) 0 0 no-repeat padding-box;
+    height: 40px;
+    /* padding: 5px; */
+    border-radius: 25px;
+    font-size: 22px;
+    font-weight: bolder;
+    transition: all 0.5s;
+}
+.contact .formbutton2{
+    background: white;
+    color: rgb(2, 21, 78);
+    margin-bottom: 45px;
+    border: 2px solid rgb(2, 21, 78);
+    transition: all 0.5s;
+}
+.contact input:focus{
+    outline: none;
+}
+.testirow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.testiyellow{
+    border: 2px solid #ffc400;
+}
+.testiblue{
+    border: 2px solid #1dd1a1;
+
+}
+.testiblue svg{
+    fill: #1dd1a1;
+}
+.testiyellow svg{
+    fill: #ffc400;
+}
+.testirow .testicard{
+    width: 30%;
+    height: 425px;
+   padding: 24px;
+    overflow: hidden;
+    position: relative;
+    margin-top: 20px;
+}
+.testicontent{
+    font-size: 13px;
+    text-align: justify;
+    font-family: Montserrat,cursive;
+    font-weight: bold;
+    color: #222f3e;
+}
+.testicurve{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.testiimage{
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    transform: translate(-50%,0%);
+    height: 110px;
+    width: 110px;
+    border-radius: 50%;
+    overflow: hidden;
+    bottom: 23%;
+}
+.testiqoute{
+    margin: 20px auto;
+    margin-top: 0px;
+    text-align: center;
+}
+.testiimage img{
+    width: 100%;
+    object-fit: cover;
+    
+}
+
+.testidata{
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    bottom: 1%;
+    transform: translate(-50%,0%);
+    width: 100%;
+    color: white;
+    text-align: center;
+
+}
+.testidata .name{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+.testidata .designation{
+    font-size: 14px;
+    margin-bottom: 2px;
+    font-weight: bold;
+}
+.testidata .linkedinicon a{
+    color: white;
+    text-decoration: none;
+}
+@media(max-width:1280px){
+    .testirow .testicard{
+        width:40%
+    }
+}
+@media(max-width:992px){
+    .testirow .testicard{
+        width:70%;
+    }
+}
+@media(max-width:560px){
+    .testicontent{
+        font-size: 11px;
+    }
+}
+@media(max-width:525px){
+    .testidata .name{
+        font-size: 14px;
+        
+    }
+    .testidata .designation{
+        font-size: 11px;
+       
+    }
+    .testiimage{
+        bottom: 21%;
+    }
+}
+@media(max-width:500px){
+    .testirow .testicard{
+        height: 450px;
+    }
+    .testiimage{
+        bottom: 18%;
+    }
+    .testicard svg{
+    height: 185px;
+
+    }
+}
+@media(max-width:400px){
+    .testicontent{
+        font-size: 9px;
+    }
+    .testidata .name{
+        font-size: 12px;
+        
+    }
+    .testidata .designation{
+        font-size: 9px;
+       
+    }
 }
 @media(max-width:1200px){
     .home .row .col-xl-6 {
@@ -1109,7 +1336,7 @@ font-family: 'Lemonada', cursive;
     margin-bottom: 0px;
 }
 .component{
-    padding-top: 30%;
+    padding-top: 34%;
 }
 }
 @media(max-width:970px){
