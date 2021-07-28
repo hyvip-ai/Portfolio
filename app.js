@@ -375,11 +375,22 @@ front.addEventListener("click", () => {
   python.classList.remove("worksactive")
   art.classList.remove("worksactive")
   front.classList.add("worksactive")
-  fropro.style.display = "block"
+  fropro.style.display = "none"
   artpro.style.display = "none"
   fupro.style.display = "none"
   pypro.style.display = "none"
   apipro.style.display = "none"
+  const frtl = new TimelineLite();
+  frtl.fromTo(`.frontproj`,0.5,{
+    display:"none",
+    opacity:0,
+    x:-250
+  },{
+    
+    opacity:1,
+    x:0,
+    display:"block",
+  })
 })
 api.addEventListener("click", () => {
   console.log("clicked")
@@ -393,7 +404,20 @@ api.addEventListener("click", () => {
   artpro.style.display = "none"
   fupro.style.display = "none"
   pypro.style.display = "none"
-  apipro.style.display = "block"
+  apipro.style.display = "none"
+  const jatl = new TimelineLite();
+  jatl.fromTo(`.apisprojectsdiv`,0.5,{
+    display:"none",
+    opacity:0,
+    x:-250
+  },{
+    
+    opacity:1,
+    x:0,
+    display:"block",
+  })
+ 
+ 
 })
 full.addEventListener("click", () => {
   console.log("clicked")
@@ -405,9 +429,20 @@ full.addEventListener("click", () => {
   full.classList.add("worksactive")
   fropro.style.display = "none"
   artpro.style.display = "none"
-  fupro.style.display = "block"
+  fupro.style.display = "none"
   pypro.style.display = "none"
   apipro.style.display = "none"
+  const ntl = new TimelineLite()
+  ntl.fromTo(`.fullstack`,0.5,{
+    display:"none",
+    opacity:0,
+    x:-250
+  },{
+    
+    opacity:1,
+    x:0,
+    display:"block",
+  })
 })
 python.addEventListener("click", () => {
   console.log("clicked")
@@ -420,8 +455,20 @@ python.addEventListener("click", () => {
   fropro.style.display = "none"
   artpro.style.display = "none"
   fupro.style.display = "none"
-  pypro.style.display = "block"
+  pypro.style.display = "none"
   apipro.style.display = "none"
+  const ptl = new TimelineLite()
+
+  ptl.fromTo(`.pytproj`,0.5,{
+    display:"none",
+    opacity:0,
+    x:-250
+  },{
+    
+    opacity:1,
+    x:0,
+    display:"block",
+  })
 })
 art.addEventListener("click", () => {
   console.log("clicked")
@@ -431,9 +478,23 @@ art.addEventListener("click", () => {
   python.classList.remove("worksactive")
   art.classList.remove("worksactive")
   art.classList.add("worksactive")
-  fropro.style.display = "none"
-  artpro.style.display = "block"
+   fropro.style.display = "none"
+  artpro.style.display = "none"
   fupro.style.display = "none"
   pypro.style.display = "none"
   apipro.style.display = "none"
+  const ptl = new TimelineLite()
+
+  ptl.fromTo(`.artclass`,0.5,{
+    display:"none",
+    opacity:0,
+    x:-250
+  },{
+    
+    opacity:1,
+    x:0,
+    display:"block",
+  })
 })
+
+

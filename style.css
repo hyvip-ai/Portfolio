@@ -1162,9 +1162,7 @@ font-family: 'Lemonada', cursive;
     letter-spacing: 1px; 
     font-weight: bolder;
   }
-  #arts{
-      display: none;
-  }
+
 
 .button-6 {
     position: relative;
@@ -1214,7 +1212,8 @@ font-family: 'Lemonada', cursive;
   
 #apiproject,
 #fullprojects,
-#pythonprojects{
+#pythonprojects,
+#arts{
     display: none;
 }
 .testicontent{
