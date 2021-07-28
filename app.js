@@ -317,12 +317,12 @@ function closemodal() {
   // var img  = document.querySelector(".modalimage")
   // img.src = ``
 }
-$(document).ready(function(){
+$(document).ready(function () {
 
   var events = [
     {
-      date:'3/05/2021-3/06/2021',
-      content:'Padhhigh - Content Writer'
+      date: '3/05/2021-3/06/2021',
+      content: 'Padhhigh - Content Writer'
     },
     {
       date: '17/05/2021-16/06/2021',
@@ -336,22 +336,104 @@ $(document).ready(function(){
       date: '17/06/2021 - PRESENT',
       content: 'Upjao - Full Stack Developer'
     },
-    
-       
- 
-  
- 
+
+
+
+
+
   ];
 
-    $('#my-timeline').roadmap(events, {
-        eventsPerSlide: 4,
-        slide: 1,
-      
-  prevArrow: '<i class="fas fa-angle-left"></i>',
+  $('#my-timeline').roadmap(events, {
+    eventsPerSlide: 4,
+    slide: 1,
 
-  
-  nextArrow: '<i class="fas fa-angle-right"></i>',
-  orientation:'auto'
+    prevArrow: '<i class="fas fa-angle-left"></i>',
 
-    });
+
+    nextArrow: '<i class="fas fa-angle-right"></i>',
+    orientation: 'auto'
+
+  });
 });
+
+var front = document.getElementById("front")
+var api = document.getElementById("api")
+var full = document.getElementById("full")
+var python = document.getElementById("python")
+var art = document.getElementById("art")
+var pypro = document.getElementById("pythonprojects")
+var fupro = document.getElementById("fullprojects")
+var apipro = document.getElementById("apiproject")
+var fropro = document.getElementById("frontprojects")
+var artpro = document.getElementById("arts")
+
+front.addEventListener("click", () => {
+  console.log("clicked")
+  front.classList.remove("worksactive")
+  api.classList.remove("worksactive")
+  full.classList.remove("worksactive")
+  python.classList.remove("worksactive")
+  art.classList.remove("worksactive")
+  front.classList.add("worksactive")
+  fropro.style.display = "block"
+  artpro.style.display = "none"
+  fupro.style.display = "none"
+  pypro.style.display = "none"
+  apipro.style.display = "none"
+})
+api.addEventListener("click", () => {
+  console.log("clicked")
+  front.classList.remove("worksactive")
+  api.classList.remove("worksactive")
+  full.classList.remove("worksactive")
+  python.classList.remove("worksactive")
+  art.classList.remove("worksactive")
+  api.classList.add("worksactive")
+  fropro.style.display = "none"
+  artpro.style.display = "none"
+  fupro.style.display = "none"
+  pypro.style.display = "none"
+  apipro.style.display = "block"
+})
+full.addEventListener("click", () => {
+  console.log("clicked")
+  front.classList.remove("worksactive")
+  api.classList.remove("worksactive")
+  full.classList.remove("worksactive")
+  python.classList.remove("worksactive")
+  art.classList.remove("worksactive")
+  full.classList.add("worksactive")
+  fropro.style.display = "none"
+  artpro.style.display = "none"
+  fupro.style.display = "block"
+  pypro.style.display = "none"
+  apipro.style.display = "none"
+})
+python.addEventListener("click", () => {
+  console.log("clicked")
+  front.classList.remove("worksactive")
+  api.classList.remove("worksactive")
+  full.classList.remove("worksactive")
+  python.classList.remove("worksactive")
+  art.classList.remove("worksactive")
+  python.classList.add("worksactive")
+  fropro.style.display = "none"
+  artpro.style.display = "none"
+  fupro.style.display = "none"
+  pypro.style.display = "block"
+  apipro.style.display = "none"
+})
+art.addEventListener("click", () => {
+  console.log("clicked")
+  front.classList.remove("worksactive")
+  api.classList.remove("worksactive")
+  full.classList.remove("worksactive")
+  python.classList.remove("worksactive")
+  art.classList.remove("worksactive")
+  art.classList.add("worksactive")
+  fropro.style.display = "none"
+  artpro.style.display = "block"
+  fupro.style.display = "none"
+  pypro.style.display = "none"
+  apipro.style.display = "none"
+})

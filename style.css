@@ -964,20 +964,16 @@ font-family: 'Lemonada', cursive;
     border: 4px solid lightgray;
     transform: translateZ(60px);
     transform-style: preserve-3d;
-    padding-top: 35%;
+    padding-top: 36%;
 
    
 }
-@media(max-width:992px){
-    .component{
-        padding-top: 28%;
-    }
-}
+
 .card-back{
     background-color: rgb(50, 51, 51);
     transform: rotateY(180deg);
     color: white;
-    padding-top: 25%;
+    padding-top: 40%;
     
 }
 .card-back #github{
@@ -1143,6 +1139,84 @@ font-family: 'Lemonada', cursive;
 .testirow .testicard:hover{
     box-shadow: 0px 0px 15px rgba(0, 0,0, 0.4);
 }
+.button-6{
+    display: inline-flex;
+    height: 40px;
+    width: 150px;
+    border: 2px solid #1dd1a1;
+    margin: 20px 20px 20px 20px;
+    color: #1dd1a1;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: .8em;
+    letter-spacing: 1.5px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 25px;
+  }
+  
+  .button-6 a{
+    color: #1dd1a1;
+    text-decoration: none;
+    letter-spacing: 1px; 
+    font-weight: bolder;
+  }
+  #arts{
+      display: none;
+  }
+
+.button-6 {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .button-6 a {
+    position: relative;
+    transition: all .45s ease-Out;
+  }
+  .worksactive{
+      background-color: #1dd1a1;
+      color: white;
+      border: 2px solid #222f3e;
+  }
+  
+  .spin {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    left: 70px;
+    top: 20px;
+    transform: rotate(0deg);
+    background: none;
+    position: absolute;
+    transition: all .5s ease-Out;
+  }
+  .button-6:hover{
+      border: 2px solid #222f3e;
+      color: white;
+  }
+  .button-6:hover .spin {
+    width: 200%;
+    height: 500%;
+    opacity: 1;
+    left: -70px;
+    top: -70px;
+    background: #1dd1a1;
+    transform: rotate(80deg);
+  }
+  
+  .button-6:hover a {
+    color: white;
+  }
+  
+  
+#apiproject,
+#fullprojects,
+#pythonprojects{
+    display: none;
+}
 .testicontent{
     font-size: 13px;
     text-align: justify;
@@ -1203,6 +1277,14 @@ font-family: 'Lemonada', cursive;
     color: white;
     text-decoration: none;
 }
+@media(max-width:992px){
+    .component{
+        padding-top: 28%;
+    }
+    .card-back{
+        padding-top: 26%;
+    }
+}
 @media(max-width:1280px){
     .testirow .testicard{
         width:40%
@@ -1211,6 +1293,12 @@ font-family: 'Lemonada', cursive;
 @media(max-width:992px){
     .testirow .testicard{
         width:70%;
+    }
+}
+@media(max-width:770px){
+ 
+    .card-back{
+        padding-top: 35%;
     }
 }
 @media(max-width:560px){
@@ -1355,6 +1443,15 @@ font-family: 'Lemonada', cursive;
     .floatingnavbtn1{
         display: block;
     }
+}
+@media(max-width:500px){
+    .component{
+        padding-top: 45%;
+    }
+    .card-back{
+        padding-top: 42%;
+    }
+
 }
 
 @media(max-width:498px){
