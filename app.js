@@ -1,5 +1,45 @@
+var keys = {37: 1, 38: 1, 39: 1, 40: 1};
 
-const introtl = new TimelineLite()
+function preventDefault(e) {
+  e.preventDefault();
+}
+
+function preventDefaultForScrollKeys(e) {
+  if (keys[e.keyCode]) {
+    preventDefault(e);
+    return false;
+  }
+}
+
+// modern Chrome requires { passive: false } when adding event
+var supportsPassive = false;
+try {
+  window.addEventListener("test", null, Object.defineProperty({}, 'passive', {
+    get: function () { supportsPassive = true; } 
+  }));
+} catch(e) {}
+
+var wheelOpt = supportsPassive ? { passive: false } : false;
+var wheelEvent = 'onwheel' in document.createElement('div') ? 'wheel' : 'mousewheel';
+
+// call this to Disable
+function disableScroll() {
+  window.addEventListener('DOMMouseScroll', preventDefault, false); // older FF
+  window.addEventListener(wheelEvent, preventDefault, wheelOpt); // modern desktop
+  window.addEventListener('touchmove', preventDefault, wheelOpt); // mobile
+  window.addEventListener('keydown', preventDefaultForScrollKeys, false);
+}
+
+// call this to Enable
+function enableScroll() {
+  window.removeEventListener('DOMMouseScroll', preventDefault, false);
+  window.removeEventListener(wheelEvent, preventDefault, wheelOpt); 
+  window.removeEventListener('touchmove', preventDefault, wheelOpt);
+  window.removeEventListener('keydown', preventDefaultForScrollKeys, false);
+}
+const introtl = new TimelineLite({paused:true,onComplete: function(){ 
+  enableScroll()
+}})
 introtl.fromTo(
   ".hidetext1",
   0.8,
@@ -121,6 +161,11 @@ introtl.fromTo(
     height:"0%"
   }
 )
+
+window.addEventListener('load',()=>{
+  disableScroll();
+  introtl.play();
+})
 const tl = new TimelineLite({ paused: true });
 
 tl.fromTo(
@@ -450,13 +495,17 @@ $(document).ready(function () {
       content: 'Engineer Diaries - Angular Developer'
     },
     {
-      date: '29/05/2020 - 28/06/202',
+      date: '29/05/2020 - 28/06/2021',
       content: 'Srchout - Full Stack Developer'
     },
     {
-      date: '17/06/2021 - PRESENT',
+      date: '17/06/2021 - 16/08/2021',
       content: 'Upjao - Full Stack Developer'
     },
+    {
+      date:'18/08/2021 - PRESENT',
+      content:'AGPayTech - Junior Angular Developer'
+    }
 
 
 
@@ -465,7 +514,7 @@ $(document).ready(function () {
   ];
 
   $('#my-timeline').roadmap(events, {
-    eventsPerSlide: 4,
+    eventsPerSlide: 5,
     slide: 1,
 
     prevArrow: '<i class="fas fa-angle-left"></i>',
