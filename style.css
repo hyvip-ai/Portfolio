@@ -29,6 +29,7 @@ i{
     width: 100%;
     background-color: rgb(31, 30, 34);
     z-index: 100;
+    top: 100%;
 }
 .intro .introtext{
   

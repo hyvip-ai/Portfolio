@@ -153,9 +153,11 @@ introtl.fromTo(
     y: -150
    },"-=0.5"
 ).fromTo(".intro2",1,{
-  height:"0"
+  height:"0",
+  top:"100%"
 },{
-  height:"100%"
+  height:"100%",
+  top:"0%"
 }).to(".intro",0.5,{
   display:"none"
 }).to(
