@@ -1,5 +1,126 @@
 
-
+const introtl = new TimelineLite()
+introtl.fromTo(
+  ".hidetext1",
+  0.8,
+  {
+    opacity:0,
+    y:150
+  },
+  {
+    opacity:1,
+    y:0
+  }
+).fromTo(
+  ".hidetext2",
+  0.8,
+  {
+    opacity:0,
+    y:150
+  },
+  {
+    opacity:1,
+    y:0
+  },"-=0.5"
+).fromTo(
+  ".hidetext3",
+  0.8,
+  {
+    opacity:0,
+    y:150
+  },
+  {
+    opacity:1,
+    y:0
+  },"-=0.5"
+).fromTo(
+  ".hidetext4",
+  0.8,
+  {
+    opacity:0,
+    y:150
+  },
+  {
+    opacity:1,
+    y:0
+  },"-=0.5"
+).fromTo(
+  ".hidetext5",
+  0.8,
+  {
+    opacity:0,
+    y:150
+  },
+  {
+    opacity:1,
+    y:0
+  },"-=0.5"
+).fromTo(
+  ".hidetext1",
+  0.8,
+  {
+    
+    y:0
+  },
+  {
+    
+    y:-150  
+  },"+=1"
+).fromTo(
+  ".hidetext2",
+  0.8,
+  {
+    
+    y:0
+  },
+  {
+    
+    y:-150
+    },"-=0.5"
+).fromTo(
+  ".hidetext3",
+  0.8,
+  {
+    
+    y:0
+  },
+  {
+    
+    y:-150
+    },"-=0.5"
+).fromTo(
+  ".hidetext4",
+  0.8,
+  {
+    
+    y:0
+  },
+  {
+    
+    y: -150
+   },"-=0.5"
+).fromTo(
+  ".hidetext5",
+  0.8,
+  {
+    
+    y:0
+  },
+  {
+    
+    y: -150
+   },"-=0.5"
+).fromTo(".intro2",1,{
+  height:"0"
+},{
+  height:"100%"
+}).to(".intro",0.5,{
+  display:"none"
+}).to(
+  ".intro2",0.8,{
+    height:"0%"
+  }
+)
 const tl = new TimelineLite({ paused: true });
 
 tl.fromTo(
