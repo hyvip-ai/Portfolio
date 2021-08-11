@@ -39,6 +39,8 @@ function enableScroll() {
 }
 const introtl = new TimelineLite({paused:true,onComplete: function(){ 
   enableScroll()
+  document.querySelector("body").style.height = "auto"
+  document.querySelector("body").style.overflow = "auto"
 }})
 introtl.fromTo(
   ".hidetext1",
