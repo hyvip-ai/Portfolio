@@ -1,3 +1,6 @@
+
+
+
 var keys = {37: 1, 38: 1, 39: 1, 40: 1};
 
 function preventDefault(e) {
@@ -152,7 +155,7 @@ introtl.fromTo(
     
     y: -150
    },"-=0.5"
-).fromTo(".intro2",1,{
+).fromTo(".intro2",0.5,{
   height:"0",
   top:"100%"
 },{
