@@ -673,5 +673,3 @@ art.addEventListener("click", () => {
     display:"block",
   })
 })
-
-
