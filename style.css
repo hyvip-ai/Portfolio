@@ -365,8 +365,13 @@ i{
 }
 
 #nav{
-    height: 60px;
-    background-color: transparent;
+   padding-bottom: 20px;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+
 }
 #nav .row{
     height: 100%;
@@ -1431,6 +1436,24 @@ font-family: 'Lemonada', cursive;
     background: white;
     color: rgb(2, 21, 78);
     border: 2px solid rgb(2, 21, 78);
+}
+.contact .formbutton2{
+    text-decoration: none;
+    display: block;
+    width: 80%;
+    margin: 20px auto;
+    border: none;
+    outline: none;
+    color: white;
+    text-align: center;
+    font-family: Montserrat,cursive;
+    background:rgb(2, 21, 78);
+    height: 40px;
+    /* padding: 5px; */
+    border-radius: 25px;
+    font-size: 22px;
+    font-weight: bolder;
+    transition: all 0.5s;
 }
 .contact .formbutton2:hover{
     color: white;
