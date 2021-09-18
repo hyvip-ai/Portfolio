@@ -1015,7 +1015,7 @@ font-family: 'Lemonada', cursive;
 }
 .showit .col-12 a{
     display: inline-block;
-    width: 20%;
+    /* width: 20%; */
     height: 70%;
     position: relative;
     margin-bottom: 30px;
