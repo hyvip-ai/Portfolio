@@ -191,14 +191,16 @@ var btnvisible = false;
 var navvisible = true;
 var typed = new Typed(".typing", {
   strings: [
-    " Student.",
-    " Geek.",
-    " Programer.",
-    " Enthusiast!",
-    " Web-Developer!",
-    " Web-Designer!",
-    "Artist!",
-    "Illustrator!",
+    "An Artist!",
+    "A Student.",
+    "A Geek.",
+    "A Programer.",
+    "A Enthusiast!",
+    "A Web-Developer!",
+    "An Angular Developer.",
+    "An Illustrator!",
+    "A React Developer.",
+    "A Full Stack Developer"
   ],
   smartBackspace: true,
   backSpeed: 80,
