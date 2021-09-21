@@ -12,7 +12,7 @@ GSAP
 TIMELINELITE
 and there are many small pugins of jQuery.
 
-You can check out the websute here : 
+You can check out the website here : 
 [Rajat Mondal Portfolio](https://rajatmondalportfolio.netlify.app/)
 
 Also I am Familiar with Tech Stacks like :

@@ -675,3 +675,16 @@ art.addEventListener("click", () => {
     display:"block",
   })
 })
+  
+
+
+
+  var x_coordinate = 22.4664
+  var y_coordinate = 88.2887
+  var map = L.map('map').setView([x_coordinate, y_coordinate], 13);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+  }).addTo(map);
+  L.marker([x_coordinate, y_coordinate]).addTo(map)
+  .bindPopup('My Location')
+  .openPopup();
