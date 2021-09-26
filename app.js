@@ -681,6 +681,19 @@ art.addEventListener("click", () => {
   
 
 
+    $("#testimonial-slider").owlCarousel({
+        items:1,
+        itemsDesktop:[1000,1],
+        itemsDesktopSmall:[979,1],
+        itemsTablet:[768,1],
+        pagination:true,
+        navigation:false,
+        navigationText:["",""],
+        // autoPlay:true,
+        // autoplayTimeout:3000,
+        autoplayHoverPause:true
+    });
+
 
   // var x_coordinate = 22.4664
   // var y_coordinate = 88.2887
