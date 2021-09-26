@@ -336,7 +336,7 @@ i{
     position: absolute;
     height: 100vh;
     width: 100%;
-    z-index: 100;
+    z-index: 105;
     background-color: black;
     display: flex;
     justify-content: center;
@@ -349,7 +349,7 @@ i{
     height:0%;
     width: 100%;
     background-color: rgb(31, 30, 34);
-    z-index: 100;
+    z-index: 105;
     top: 100%;
 }
 .intro .introtext{
@@ -615,7 +615,7 @@ i{
     position: fixed;
     top: 10px;
     right: 1%;
-    z-index: 10;
+    z-index: 100;
     height: 58px;
     width: 58px;
     border-radius: 50%;
@@ -637,7 +637,7 @@ i{
     position: fixed;
     top: 10px;
     right: 1%;
-    z-index: 10;
+    z-index: 100;
     height: 58px;
     width: 58px;
     border-radius: 50%;
@@ -653,7 +653,7 @@ i{
 
 .floatingnav{
     position: fixed;
-    z-index: 4;
+    z-index: 70;
     background-color: #1dd1a1;
     top: -500px;
     right: -500px;
@@ -1654,13 +1654,13 @@ font-family: 'Lemonada', cursive;
     color: white;
     text-decoration: none;
 }
-#map{
+/*#map{
 margin: 20px auto;
 width: 100%;
 height: 60vh;
 position: relative;
 
-}
+}*/
 @media(max-width:992px){
     .component{
         padding-top: 28%;

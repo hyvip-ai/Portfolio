@@ -1,5 +1,8 @@
 
 
+document.body.scrollTop = 0;
+document.documentElement.scrollTop = 0;
+
 
 var keys = {37: 1, 38: 1, 39: 1, 40: 1};
 
@@ -195,7 +198,7 @@ var typed = new Typed(".typing", {
     "A Student.",
     "A Geek.",
     "A Programer.",
-    "A Enthusiast!",
+    "An Enthusiast!",
     "A Web-Developer!",
     "An Angular Developer.",
     "An Illustrator!",
@@ -679,12 +682,12 @@ art.addEventListener("click", () => {
 
 
 
-  var x_coordinate = 22.4664
-  var y_coordinate = 88.2887
-  var map = L.map('map').setView([x_coordinate, y_coordinate], 13);
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-  }).addTo(map);
-  L.marker([x_coordinate, y_coordinate]).addTo(map)
-  .bindPopup('My Location')
-  .openPopup();
+  // var x_coordinate = 22.4664
+  // var y_coordinate = 88.2887
+  // var map = L.map('map').setView([x_coordinate, y_coordinate], 13);
+  // L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  //     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+  // }).addTo(map);
+  // L.marker([x_coordinate, y_coordinate]).addTo(map)
+  // .bindPopup('My Location')
+  // .openPopup();
