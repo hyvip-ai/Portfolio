@@ -685,8 +685,8 @@ art.addEventListener("click", () => {
         pagination:true,
         navigation:false,
         navigationText:["",""],
-        // autoPlay:true,
-        // autoplayTimeout:3000,
+        autoPlay:true,
+        autoplayTimeout:3000,
         autoplayHoverPause:true
     });
 
