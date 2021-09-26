@@ -325,15 +325,15 @@ header h1{
   }
 }
 
-body{
+/*body{
     height: 100vh;
     overflow: hidden;
 }
-i{
+*/i{
     color: #1dd1a1;
 }
 .intro{
-    position: absolute;
+    position: fixed;
     height: 100vh;
     width: 100%;
     z-index: 105;
@@ -345,7 +345,7 @@ i{
     /* opacity: 0; */
 }
 .intro2{
-    position: absolute;
+    position: fixed;
     height:0%;
     width: 100%;
     background-color: rgb(31, 30, 34);
@@ -1689,7 +1689,6 @@ position: relative;
     font-weight:400;
     font-style: italic;
     color: #848484;
-    line-height: 30px;
     padding-bottom: 25px;
     margin-bottom: 15px;
     position: relative;
@@ -1744,7 +1743,7 @@ position: relative;
     background: #fff;
     margin-top: 10px;
     position: absolute;
-    bottom: -15%;
+   
     left: 50%;
     transform: translateX(-50%);
 }
@@ -1771,9 +1770,46 @@ position: relative;
 .owl-next:before{
     content:"\f105";
 }
+@media(max-width:900px){
+    .testimonial .description{
+    font-size: 17px;
+   
+   
+}
+.testimonial .title{
+    font-size: 21px;
+
+}
+.testimonial .post{
+    font-size: 18px;
+   
+}
+}
+
+@media(max-width:500px){
+    .testimonial-bg{
+        border-width: 4px;
+    }
+    .testimonial .description{
+    font-size: 15px;
+   
+   
+}
+.testimonial .title{
+    font-size: 20px;
+
+}
+.testimonial .post{
+    font-size: 15px;
+   
+}
+}
+
+
+
 @media only screen and (max-width:767px){
     .testimonial-bg{ padding: 50px 40px; }
-    .owl-theme .owl-controls{ bottom: -22%; }
+    
 }
 @media only screen and (max-width:480px){
     .testimonial-bg:before{
@@ -1782,16 +1818,31 @@ position: relative;
         line-height: 55px;
         font-size: 40px;
     }
-    .testimonial-bg{ padding: 30px 10px; }
-    .owl-theme .owl-controls{ bottom: -15%; }
+    .testimonial-bg{ padding: 30px 0px; }
+   
 }
-@media only screen and (max-width:360px){
-    .testimonial .title,
-    .testimonial .post{
-        font-size: 16px;
-    }
-    .owl-theme .owl-controls{ bottom: -12%; }
+@media(max-width: 480px){
+.owl-theme .owl-controls{
+    bottom: -6%;
 }
+}
+@media(max-width:450px){
+    .testimonial .description{
+    font-size: 12px;
+   
+   
+}
+.testimonial .title{
+    font-size: 18px;
+
+}
+.testimonial .post{
+    font-size: 13px;
+   
+}
+}
+
+
 @media(max-width:992px){
     .component{
         padding-top: 28%;
@@ -1800,7 +1851,7 @@ position: relative;
         padding-top: 26%;
     }
 }
-@media(max-width:1280px){
+/*@media(max-width:1280px){
     .testirow .testicard{
         width:40%
     }
@@ -1820,8 +1871,8 @@ position: relative;
     .testicontent{
         font-size: 11px;
     }
-}
-@media(max-width:525px){
+}*/
+/*@media(max-width:525px){
     .testidata .name{
         font-size: 14px;
         
@@ -1858,7 +1909,7 @@ position: relative;
         font-size: 9px;
        
     }
-}
+}*/
 @media(max-width:1200px){
     .home .row .col-xl-6 {
         height: 496px;
@@ -2039,9 +2090,7 @@ position: relative;
         padding-top: 48%;
     }
 
-    .floatingnavbtn1 {
-    padding-top: 6.5px;
-    }
+
   
 }
 @media (max-width:376px){

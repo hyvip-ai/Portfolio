@@ -4,50 +4,46 @@ document.body.scrollTop = 0;
 document.documentElement.scrollTop = 0;
 
 
-var keys = {37: 1, 38: 1, 39: 1, 40: 1};
+// var keys = {37: 1, 38: 1, 39: 1, 40: 1};
 
-function preventDefault(e) {
-  e.preventDefault();
-}
+// function preventDefault(e) {
+//   e.preventDefault();
+// }
 
-function preventDefaultForScrollKeys(e) {
-  if (keys[e.keyCode]) {
-    preventDefault(e);
-    return false;
-  }
-}
+// function preventDefaultForScrollKeys(e) {
+//   if (keys[e.keyCode]) {
+//     preventDefault(e);
+//     return false;
+//   }
+// }
 
-// modern Chrome requires { passive: false } when adding event
-var supportsPassive = false;
-try {
-  window.addEventListener("test", null, Object.defineProperty({}, 'passive', {
-    get: function () { supportsPassive = true; } 
-  }));
-} catch(e) {}
+// // modern Chrome requires { passive: false } when adding event
+// var supportsPassive = false;
+// try {
+//   window.addEventListener("test", null, Object.defineProperty({}, 'passive', {
+//     get: function () { supportsPassive = true; } 
+//   }));
+// } catch(e) {}
 
-var wheelOpt = supportsPassive ? { passive: false } : false;
-var wheelEvent = 'onwheel' in document.createElement('div') ? 'wheel' : 'mousewheel';
+// var wheelOpt = supportsPassive ? { passive: false } : false;
+// var wheelEvent = 'onwheel' in document.createElement('div') ? 'wheel' : 'mousewheel';
 
-// call this to Disable
-function disableScroll() {
-  window.addEventListener('DOMMouseScroll', preventDefault, false); // older FF
-  window.addEventListener(wheelEvent, preventDefault, wheelOpt); // modern desktop
-  window.addEventListener('touchmove', preventDefault, wheelOpt); // mobile
-  window.addEventListener('keydown', preventDefaultForScrollKeys, false);
-}
 
-// call this to Enable
-function enableScroll() {
-  window.removeEventListener('DOMMouseScroll', preventDefault, false);
-  window.removeEventListener(wheelEvent, preventDefault, wheelOpt); 
-  window.removeEventListener('touchmove', preventDefault, wheelOpt);
-  window.removeEventListener('keydown', preventDefaultForScrollKeys, false);
-}
-const introtl = new TimelineLite({paused:true,onComplete: function(){ 
-  enableScroll()
-  document.querySelector("body").style.height = "auto"
-  document.querySelector("body").style.overflow = "auto"
-}})
+// function disableScroll() {
+//   window.addEventListener('DOMMouseScroll', preventDefault, false); // older FF
+//   window.addEventListener(wheelEvent, preventDefault, wheelOpt); // modern desktop
+//   window.addEventListener('touchmove', preventDefault, wheelOpt); // mobile
+//   window.addEventListener('keydown', preventDefaultForScrollKeys, false);
+// }
+
+
+// function enableScroll() {
+//   window.removeEventListener('DOMMouseScroll', preventDefault, false);
+//   window.removeEventListener(wheelEvent, preventDefault, wheelOpt); 
+//   window.removeEventListener('touchmove', preventDefault, wheelOpt);
+//   window.removeEventListener('keydown', preventDefaultForScrollKeys, false);
+// }
+const introtl = new TimelineLite({paused:true})
 introtl.fromTo(
   ".hidetext1",
   0.8,
@@ -173,7 +169,7 @@ introtl.fromTo(
 )
 
 window.addEventListener('load',()=>{
-  disableScroll();
+  // disableScroll();
   introtl.play();
 })
 const tl = new TimelineLite({ paused: true });
