@@ -259,8 +259,15 @@ function sidenav() {
     sign1.innerHTML = "&#10005;";
 
     setTimeout(() => {
-      circle.style.height = "1000px";
+     if(screen.width>=500){
       circle.style.width = "1000px";
+     }
+     else{
+      circle.style.width = `${500+screen.width}px`;
+     }
+     circle.style.height = "1000px";
+
+
     }, 0.3);
     setTimeout(() => {
       main.style.opacity = "1";

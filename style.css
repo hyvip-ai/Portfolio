@@ -2055,7 +2055,7 @@ position: relative;
 
 @media (max-width:426px){
     .floatingnav .wrapper .main{
-        left: 253px;
+        left: 20%;
     }
     .about .description p{
         font-size: 12px;
@@ -2095,7 +2095,7 @@ position: relative;
 }
 @media (max-width:376px){
     .floatingnav .wrapper .main{
-        left: 275px;
+        left: 20%;
     }
     .home .imgdiv .des p {
         margin-top: 64%;
@@ -2104,9 +2104,7 @@ position: relative;
 
 
 @media (max-width:321px){
-    .floatingnav .wrapper .main{
-        left: 295px;
-    }
+  
     .about .aboutlink {
         margin-bottom: 37px;
     }
