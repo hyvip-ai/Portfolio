@@ -1302,7 +1302,7 @@ font-family: 'Lemonada', cursive;
 
 }
 .card-front{
-    background-image: url(./assets/code1.jpg);
+    background-image: url(./assets/code.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1327,7 +1327,7 @@ font-family: 'Lemonada', cursive;
 }
 
 .card-back{
-    background-color: rgb(50, 51, 51);
+    background-color: #230d31;
     transform: rotateY(180deg);
     color: white;
     padding-top: 40%;
@@ -1357,14 +1357,14 @@ font-family: 'Lemonada', cursive;
 .cardtitle{
     transform: translateZ(150px);
     pointer-events: none;
-    text-shadow: 0px 0px 8px rgba(255,255,255,0.6);
+    text-shadow: 0px 0px 8px rgba(0,0,0,0.6);
 
     
 }
 .cardsubtitle{
     transform: translateZ(100px);
     pointer-events: none;
-    text-shadow: 0px 0px 8px rgba(255,255,255,0.6);
+    text-shadow: 0px 0px 8px rgba(0,0,0,0.6);
 
 }
 .cardbody{
@@ -1594,73 +1594,7 @@ font-family: 'Lemonada', cursive;
 #arts{
     display: none;
 }
-/*.testicontent{
-    font-size: 13px;
-    text-align: justify;
-    font-family: Montserrat,cursive;
-    font-weight: bold;
-    color: #222f3e;
-}
-.testicurve{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-}
-.testiimage{
-    position: absolute;
-    z-index: 2;
-    left: 50%;
-    transform: translate(-50%,0%);
-    height: 110px;
-    width: 110px;
-    border-radius: 50%;
-    overflow: hidden;
-    bottom: 23%;
-}
-.testiqoute{
-    margin: 20px auto;
-    margin-top: 0px;
-    text-align: center;
-}
-.testiimage img{
-    width: 100%;
-    object-fit: cover;
-    
-}
 
-.testidata{
-    position: absolute;
-    z-index: 2;
-    left: 50%;
-    bottom: 1%;
-    transform: translate(-50%,0%);
-    width: 100%;
-    color: white;
-    text-align: center;
-
-}
-.testidata .name{
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 2px;
-}
-.testidata .designation{
-    font-size: 14px;
-    margin-bottom: 2px;
-    font-weight: bold;
-}
-.testidata .linkedinicon a{
-    color: white;
-    text-decoration: none;
-}*/
-/*#map{
-margin: 20px auto;
-width: 70%;
-height: 35vh;
-position: relative;
-
-}*/
 .testimonial-bg{
         border: 10px solid #66e1e3;
     padding: 80px 70px;
@@ -1851,65 +1785,7 @@ position: relative;
         padding-top: 26%;
     }
 }
-/*@media(max-width:1280px){
-    .testirow .testicard{
-        width:40%
-    }
-}
-@media(max-width:992px){
-    .testirow .testicard{
-        width:70%;
-    }
-}
-@media(max-width:770px){
- 
-    .card-back{
-        padding-top: 35%;
-    }
-}
-@media(max-width:560px){
-    .testicontent{
-        font-size: 11px;
-    }
-}*/
-/*@media(max-width:525px){
-    .testidata .name{
-        font-size: 14px;
-        
-    }
-    .testidata .designation{
-        font-size: 11px;
-       
-    }
-    .testiimage{
-        bottom: 21%;
-    }
-}
-@media(max-width:500px){
-    .testirow .testicard{
-        height: 450px;
-    }
-    .testiimage{
-        bottom: 18%;
-    }
-    .testicard svg{
-    height: 185px;
 
-    }
-}
-@media(max-width:400px){
-    .testicontent{
-        font-size: 9px;
-    }
-    .testidata .name{
-        font-size: 12px;
-        
-    }
-    .testidata .designation{
-        font-size: 9px;
-       
-    }
-}*/
 @media(max-width:1200px){
     .home .row .col-xl-6 {
         height: 496px;
