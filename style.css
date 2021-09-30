@@ -1261,12 +1261,20 @@ font-family: 'Lemonada', cursive;
     height: 55px;
     width: 55px;
     border-radius: 50%;
-    background-color: white;
-    color: black;
+    background-color: transparent;
+    color: white;
     font-weight: bolder;
-    border: none;
     outline: none;
-    
+    border: 3px solid white;
+    font-size: 25px;
+    transition: all 0.5s;
+    transform-origin: center;
+    font-weight: bolder;
+}
+#modal .closingbtn:hover{
+    transform:translateX(50%) rotateZ(-360deg);
+    color: red;
+    border-color: red;
 }
 .procol{
     margin-bottom: 80px;
