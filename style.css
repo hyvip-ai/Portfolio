@@ -980,7 +980,7 @@ header h1{
 }
 
 .footer{
-    height: 200px;
+    height: 185px;
     background-color: #222f3e;
    
 font-family: 'Lemonada', cursive;
@@ -1232,7 +1232,7 @@ font-family: 'Lemonada', cursive;
     backdrop-filter: blur(5px);
     top: 0;
     left: 0;
-    z-index: 50;
+    z-index: 1000;
     pointer-events: none;
     opacity: 0;
     /* animation-name: testing;
@@ -1255,10 +1255,11 @@ font-family: 'Lemonada', cursive;
 
 #modal .closingbtn{
     position: absolute;
-    top: 3%;
-    right: 3%;
-    height: 60px;
-    width: 60px;
+    bottom: 1%;
+    right: 50%;
+    transform: translateX(50%);
+    height: 55px;
+    width: 55px;
     border-radius: 50%;
     background-color: white;
     color: black;
