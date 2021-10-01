@@ -1272,7 +1272,7 @@ font-family: 'Lemonada', cursive;
     font-weight: bolder;
 }
 #modal .closingbtn:hover{
-    transform:translateX(50%) rotateZ(-360deg);
+    transform:translateX(50%) rotateZ(+360deg);
     color: red;
     border-color: red;
 }
