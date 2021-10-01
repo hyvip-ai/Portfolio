@@ -1148,7 +1148,7 @@
     <div class="row" style="padding:20px;">
       <div class="contactbox">
         <div class="row">
-          <div class="col-md-5">
+          <div class="col-md-5" onclick="showMessegeges()">
 
             <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_9wjm14ni.json" background="transparent"
               speed="1" loop="" autoplay=""></lottie-player>
@@ -1156,11 +1156,11 @@
           </div>
           <div class="col-md-7">
             <form>
-              <input type="text" name="name" id="name" placeholder="NAME">
-              <input type="text" name="phone" id="phone" placeholder="PHONE">
-              <input type="text" name="email" id="email" placeholder="EMAIL">
-              <textarea name="messege" id="msg" rows="3" placeholder="MESSEGE"></textarea>
-              <button class="send">SEND</button>
+              <input type="text" id="name" placeholder="NAME">
+              <input type="text" id="phone" placeholder="PHONE">
+              <input type="text" id="email" placeholder="EMAIL">
+              <textarea id="msg" rows="3" placeholder="MESSEGE"></textarea>
+              <button type="button" class="mailsend" onclick="sendMeMail(e)">SEND</button>
             </form>
           </div>
         </div>

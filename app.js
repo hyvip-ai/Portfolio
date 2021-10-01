@@ -697,13 +697,40 @@ art.addEventListener("click", () => {
         autoplayHoverPause:true
     });
 
+    var messegeArray=[]
+function sendMeMail(e){
 
-  // var x_coordinate = 22.4664
-  // var y_coordinate = 88.2887
-  // var map = L.map('map').setView([x_coordinate, y_coordinate], 13);
-  // L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-  //     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-  // }).addTo(map);
-  // L.marker([x_coordinate, y_coordinate]).addTo(map)
-  // .bindPopup('My Location')
-  // .openPopup();
+  var name = document.getElementById("name").value;
+  var phone = document.getElementById("phone").value;
+  var email = document.getElementById("email").value;
+  var message = document.getElementById("msg").value;
+
+if(name!="" && phone!="" && email!="" && message!=""){
+  var newMessege={
+    name:name,
+    phone:phone,
+    email:email,
+    messege:message
+  }
+  messegeArray.push(newMessege)
+  console.log(JSON.stringify(messegeArray))
+  localStorage.setItem("message", JSON.stringify(messegeArray));
+  document.getElementById("name").value = null;
+  document.getElementById("phone").value = null;
+  document.getElementById("email").value = null;
+  document.getElementById("msg").value = null;
+}
+  else{
+    alert("Fields Are Required You Must Enter valid values");
+  }
+
+}
+function showMessegeges(){
+ if(localStorage.getItem("message")){
+  console.log(JSON.parse(localStorage.getItem("message")))
+ }
+ else{
+   console.log("No Messege Found");
+ }
+}
+

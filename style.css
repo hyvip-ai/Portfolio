@@ -1437,7 +1437,7 @@ font-family: 'Lemonada', cursive;
     height: 40px;
 }
 
-.send:hover{
+.mailsend:hover{
     background: white;
     color: rgb(2, 21, 78);
     border: 2px solid rgb(2, 21, 78);
