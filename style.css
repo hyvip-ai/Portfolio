@@ -1290,7 +1290,7 @@ font-family: 'Lemonada', cursive;
     position: relative;
     text-align: center;
     transform-style: preserve-3d;
-    transition: all 3s;
+    transition: all 1.2s;
     transition-timing-function: ease-in-out;
     height: 100%;
     width: 100%;
