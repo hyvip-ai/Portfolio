@@ -1158,12 +1158,12 @@
 
           </div>
           <div class="col-md-7">
-            <form>
-              <input type="text" id="name" placeholder="NAME">
-              <input type="text" id="phone" placeholder="PHONE">
-              <input type="text" id="email" placeholder="EMAIL">
-              <textarea id="msg" rows="3" placeholder="MESSEGE"></textarea>
-              <button type="button" class="mailsend" onclick="sendMeMail(e)">SEND</button>
+            <form method="post" data-netlify="true">
+              <input type="text" name="name" id="name" placeholder="NAME">
+              <input type="text" id="phone" name="phone" placeholder="PHONE">
+              <input type="text" id="email" name="email" placeholder="EMAIL">
+              <textarea id="msg" rows="3" name="msg" placeholder="MESSEGE"></textarea>
+              <button type="submit" class="mailsend" onclick="sendMeMail(e)">SEND</button>
             </form>
           </div>
         </div>
