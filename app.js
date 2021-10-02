@@ -2,47 +2,6 @@
 
 document.body.scrollTop = 0;
 document.documentElement.scrollTop = 0;
-
-
-// var keys = {37: 1, 38: 1, 39: 1, 40: 1};
-
-// function preventDefault(e) {
-//   e.preventDefault();
-// }
-
-// function preventDefaultForScrollKeys(e) {
-//   if (keys[e.keyCode]) {
-//     preventDefault(e);
-//     return false;
-//   }
-// }
-
-// // modern Chrome requires { passive: false } when adding event
-// var supportsPassive = false;
-// try {
-//   window.addEventListener("test", null, Object.defineProperty({}, 'passive', {
-//     get: function () { supportsPassive = true; } 
-//   }));
-// } catch(e) {}
-
-// var wheelOpt = supportsPassive ? { passive: false } : false;
-// var wheelEvent = 'onwheel' in document.createElement('div') ? 'wheel' : 'mousewheel';
-
-
-// function disableScroll() {
-//   window.addEventListener('DOMMouseScroll', preventDefault, false); // older FF
-//   window.addEventListener(wheelEvent, preventDefault, wheelOpt); // modern desktop
-//   window.addEventListener('touchmove', preventDefault, wheelOpt); // mobile
-//   window.addEventListener('keydown', preventDefaultForScrollKeys, false);
-// }
-
-
-// function enableScroll() {
-//   window.removeEventListener('DOMMouseScroll', preventDefault, false);
-//   window.removeEventListener(wheelEvent, preventDefault, wheelOpt); 
-//   window.removeEventListener('touchmove', preventDefault, wheelOpt);
-//   window.removeEventListener('keydown', preventDefaultForScrollKeys, false);
-// }
 const introtl = new TimelineLite({paused:true})
 introtl.fromTo(
   ".hidetext1",
@@ -681,10 +640,8 @@ art.addEventListener("click", () => {
     display:"block",
   })
 })
-  
 
-
-    $("#testimonial-slider").owlCarousel({
+$("#testimonial-slider").owlCarousel({
         items:1,
         itemsDesktop:[1000,1],
         itemsDesktopSmall:[979,1],
@@ -697,40 +654,5 @@ art.addEventListener("click", () => {
         autoplayHoverPause:true
     });
 
-    var messegeArray=[]
-function sendMeMail(e){
 
-  var name = document.getElementById("name").value;
-  var phone = document.getElementById("phone").value;
-  var email = document.getElementById("email").value;
-  var message = document.getElementById("msg").value;
-
-if(name!="" && phone!="" && email!="" && message!=""){
-  var newMessege={
-    name:name,
-    phone:phone,
-    email:email,
-    messege:message
-  }
-  messegeArray.push(newMessege)
-  console.log(JSON.stringify(messegeArray))
-  localStorage.setItem("message", JSON.stringify(messegeArray));
-  document.getElementById("name").value = null;
-  document.getElementById("phone").value = null;
-  document.getElementById("email").value = null;
-  document.getElementById("msg").value = null;
-}
-  else{
-    alert("Fields Are Required You Must Enter valid values");
-  }
-
-}
-function showMessegeges(){
- if(localStorage.getItem("message")){
-  console.log(JSON.parse(localStorage.getItem("message")))
- }
- else{
-   console.log("No Messege Found");
- }
-}
 
