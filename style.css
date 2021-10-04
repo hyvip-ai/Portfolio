@@ -1729,7 +1729,12 @@ font-family: 'Lemonada', cursive;
 }
 }
 
+
+
 @media(max-width:500px){
+    #modal .closingbtn{
+        bottom: 2%;
+    }
     .testimonial-bg{
         border-width: 4px;
     }
@@ -1746,6 +1751,12 @@ font-family: 'Lemonada', cursive;
     font-size: 15px;
    
 }
+}
+
+@media (max-width:400px) {
+    #modal .closingbtn{
+        bottom: 5%;
+    }
 }
 
 
