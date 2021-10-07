@@ -1304,7 +1304,7 @@ font-family: 'Lemonada', cursive;
     bottom: 0;
     right: 0;
     transform-style: preserve-3d;
-    /* padding: 2em; */
+ 
     backface-visibility: hidden;
     border-radius: 20px;
 
@@ -1339,14 +1339,14 @@ font-family: 'Lemonada', cursive;
     background-color: #230d31;
     transform: rotateY(180deg);
     color: white;
-    padding-top: 40%;
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
 }
 .card-back #github{
     transform: translateZ(80px);
     text-decoration: white;
-    /* color: white; */
-    padding: 20px;
     pointer-events: all;
    display: block;
     font-size: 50px;
@@ -1358,7 +1358,6 @@ font-family: 'Lemonada', cursive;
     transform: translateZ(80px);
     color: white;
     /* color: white; */
-    padding: 20px;
     pointer-events: all;
    
     font-size: 50px;
@@ -1801,9 +1800,7 @@ font-family: 'Lemonada', cursive;
     .component{
         padding-top: 28%;
     }
-    .card-back{
-        padding-top: 26%;
-    }
+
 }
 
 @media(max-width:1200px){
@@ -1910,9 +1907,7 @@ font-family: 'Lemonada', cursive;
     .component{
         padding-top: 45%;
     }
-    .card-back{
-        padding-top: 42%;
-    }
+ 
 
 }
 
