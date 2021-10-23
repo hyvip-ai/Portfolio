@@ -601,16 +601,12 @@ header h1{
 }
 #btnclick{
     position: absolute;
-    top: -180%;
-    left: -80;
+    top: -200px;
+    left: 0;
     pointer-events: none;
     opacity: 0;
 }
-.parallax-window {
-    margin-top: 80px;
-	min-height: 400px;
-	background: transparent;
-}
+
 .floatingnavbtn{
     position: fixed;
     top: 10px;
@@ -1396,7 +1392,7 @@ font-family: 'Lemonada', cursive;
    margin-bottom: 50px;
 }
 .contact .contactlink{
-    margin-bottom: 100px;
+    margin-bottom: 0px;
 }
 .contact .contactlink h1{
     text-align: center;
@@ -1712,6 +1708,59 @@ font-family: 'Lemonada', cursive;
 .owl-next:before{
     content:"\f105";
 }
+.contact .row h1{
+    font-size: 30px;
+    font-family: 'Lemonada', cursive;
+    font-weight: bold;
+    text-align: center;
+    pointer-events: none;
+    position: relative;
+    color: #222f3e;
+    margin-bottom: 50px;
+}
+.contact .row .col-md-6{
+    margin-bottom: 25px;
+}
+.infocard{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.infocard .icon{
+    
+    font-size: 55px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;    
+}
+.infocard .icon i{
+    padding: 15px;
+    border-radius: 50%;
+    height: 90px;
+    width: 90px;
+    background-color: #1dd1a1;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.infocard .data div{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.infocard .data div .right a{
+    text-decoration: none;
+    color: #1dd1a1;
+}
+.infocard .data div .left{
+    font-weight: bolder;
+}
+
+
 @media(max-width:900px){
     .testimonial .description{
     font-size: 17px;
@@ -1938,6 +1987,9 @@ font-family: 'Lemonada', cursive;
         
     }
     .works .head .col-12 h1 {
+        font-size: 15px;
+    }
+    .contact .row h1{
         font-size: 15px;
     }
  
