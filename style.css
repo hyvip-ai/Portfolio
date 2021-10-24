@@ -450,7 +450,7 @@ header h1{
  height: 100%;
  object-fit: cover;
  object-position: center;
- clip-path: circle(63.4% at 50% 50%);
+ /* clip-path: circle(63.4% at 50% 50%); */
  display: block;
 
 }
@@ -461,8 +461,8 @@ header h1{
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: rgba(47, 54, 64,0.6);
-    clip-path: circle(63.4% at 50% 50%);
+    background-color: rgba(0, 0, 0,0.25);
+    /* clip-path: circle(63.4% at 50% 50%); */
     transition: all 0.5s;
     display: flex;
     justify-content: center;
@@ -520,6 +520,12 @@ header h1{
   padding-top: 0;
  
 } 
+.home .imgdiv img{
+    transition: all 0.5s;
+}
+.home .imgdiv:hover img{
+    transform: scale(1.1);
+}
 .home .imgdiv .des p::after{
     content: "";
     display: block;
@@ -555,7 +561,7 @@ header h1{
 }
 .home .row .col-xl-6{
     position: relative;
-    height: 580px;
+    height: 520px;
 }
 .home .row .col-xl-6 .bon{
     font-size: 80px;
