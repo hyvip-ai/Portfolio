@@ -1865,9 +1865,7 @@ font-family: 'Lemonada', cursive;
 }
 
 @media(max-width:1200px){
-    .home .row .col-xl-6 {
-        height: 496px;
-    }
+
 
     .home .imgdiv img{
         object-position: top;
