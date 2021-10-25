@@ -846,101 +846,11 @@ header h1{
     font-weight: bolder;
    
 }
-.outer-container,
-.outer-container2,
-.outer-container3{
-    
-   height: auto;
-  position: relative;
-   cursor: pointer;
-   font-family: 'Lemonada', cursive;
-   transition: all 0.5s;
-  
-  
-}
-.outer-container i,
-.outer-container2 i,
-.outer-container3 i{
-    font-size: 45px;
-}
-.outer-container .inner,
-.outer-container2 .inner2,
-.outer-container3 .inner3{
-    border-radius: 20px;
-  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
-    transform: perspective(800px);
-    transform-style: preserve-3d;
-    padding-left: 5%;
-    position: relative;
-    overflow: hidden;
-    
 
-}
-.outer-container .inner .descriptions .container-player,
-.outer-container2 .inner2 .descriptions2 .container-player2,
-.outer-container3 .inner3 .descriptions3 .container-player3{
-    position: absolute;
-    top: 0;
-    left: 30%;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-}
-.qualification .row .col{
-    margin-bottom: 50px;
-}
-.outer-container .inner .descriptions,
-.outer-container2 .inner2 .descriptions2,
-.outer-container3 .inner3 .descriptions3{
-    pointer-events: none;
-    text-align: left;
-    
-   
-    position: relative;
-  
-}
-.outer-container .inner .descriptions,
-.outer-container2 .inner2 .descriptions2,
-.outer-container3 .inner3 .descriptions3{
-    padding: 20px;
-   transition: all 0.5s;
 
-}
-.outer-container .inner .descriptions .cardheading,
-.outer-container2 .inner2 .descriptions2 .cardheading2,
-.outer-container3 .inner3 .descriptions3 .cardheading3{
-    display: block;
-    /* text-align: center; */
-   color: #2C3A47;
-   transition: all 0.5s;
 
-}
-.outer-container .inner .descriptions .cardheading1,
-.outer-container2 .inner2 .descriptions2 .cardheading21,
-.outer-container3 .inner3 .descriptions3 .cardheading31{
-    color: #2C3A47;
-    /* text-align: center; */
-   transition: all 0.5s;
-   font-size: 25px;
-   font-weight: bolder;
 
-}
 
-.outer-container .inner .descriptions .cardpara11,
-.outer-container .inner .descriptions .cardpara12,
-.outer-container2 .inner2 .descriptions2 .cardpara21,
-.outer-container2 .inner2 .descriptions2 .cardpara22,
-.outer-container3 .inner3 .descriptions3 .cardpara31,
-.outer-container3 .inner3 .descriptions3 .cardpara32{
-    color: rgb(47, 54, 64);
-    display: block;
-    margin-bottom: 8px;
-    /* text-align: center; */
-    font-size: 25px;
-    font-weight: bold;
-   transition: all 0.5s;
-
-}
 
 .skills{
     margin-top: 100px;
