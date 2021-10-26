@@ -1995,9 +1995,7 @@ font-family: 'Lemonada', cursive;
     .floatingnav .wrapper .main{
         left: 20%;
     }
-    .home .imgdiv .des p {
-        margin-top: 64%;
-    }
+
 }
 
 
@@ -2006,9 +2004,7 @@ font-family: 'Lemonada', cursive;
     .about .aboutlink {
         margin-bottom: 37px;
     }
-    .home .imgdiv .des p {
-        margin-top: 73%;
-    }
+
     .component {
         padding-top: 58%;
     }
