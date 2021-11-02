@@ -172,6 +172,7 @@ AOS.init();
 const opa = document.getElementById("btnclick");
 const player = document.querySelector("lottie-player");
 function resume() {
+  console.log("clicked")
   opa.style.opacity = "1";
   player.stop();
   player.play();

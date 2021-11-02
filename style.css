@@ -615,11 +615,11 @@ header h1{
 }
 #btnclick{
     position: absolute;
-    top: -200px;
-    left: 0;
+    top: -86px;
+    left: -158px;
     pointer-events: none;
     opacity: 0;
-}
+} 
 
 .floatingnavbtn{
     position: fixed;

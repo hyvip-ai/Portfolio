@@ -1,1271 +1,1738 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Hello Guys , I am Rajat Mondal a Web Developer and This is my Portfolio,Hope You will Like It"
+    />
+    <meta
+      name="keywords"
+      content="Rajat Mondal,Rajat,Mondal,Portfolio,Rajat Mondal Portfolio,HTML,CSS,JavaScript,Animation"
+    />
+    <meta name="author" content="Rajat Mondal" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/letter-r.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./assets/jquery.roadmap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Charmonman&family=Lemonada:wght@300&family=Montserrat:ital,wght@1,300&family=Poppins:ital,wght@1,200&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Monoton&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="description" content="Hello Guys , I am Rajat Mondal a Web Developer and This is my Portfolio,Hope You will Like It">
-  <meta name="keywords" content="Rajat Mondal,Rajat,Mondal,Portfolio,Rajat Mondal Portfolio,HTML,CSS,JavaScript,Animation">
-  <meta name="author" content="Rajat Mondal">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" href="./assets/letter-r.png" type="image/x-icon">
-  <link rel="stylesheet" href="./assets/jquery.roadmap.min.css">
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-  integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-  crossorigin=""/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Charmonman&family=Lemonada:wght@300&family=Montserrat:ital,wght@1,300&family=Poppins:ital,wght@1,200&display=swap"
-    rel="stylesheet" />
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/fontawesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>RAJAT MONDAL PORTFOLIO</title>
+  </head>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/fontawesome.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-    crossorigin="anonymous" />
-  <link rel="stylesheet" href="style.css" />
-  <title>RAJAT MONDAL PORTFOLIO</title>
-</head>
-
-<body>
-  <div class="intro">
-    <div class="introtext">
-      <div class="hide">
-        <h1 class="hidetext1" style="opacity: 0;">While(alive){</h1>
+  <body>
+    <div class="intro">
+      <div class="introtext">
+        <div class="hide">
+          <h1 class="hidetext1" style="opacity: 0">While(alive){</h1>
+        </div>
+        <div class="hide">
+          <h1 class="hidetext2" style="opacity: 0">
+            &nbsp;&nbsp;&nbsp; Eat();
+          </h1>
+        </div>
+        <div class="hide">
+          <h1 class="hidetext3" style="opacity: 0">
+            &nbsp;&nbsp;&nbsp; Sleep();
+          </h1>
+        </div>
+        <div class="hide">
+          <h1 class="hidetext4" style="opacity: 0">
+            &nbsp;&nbsp;&nbsp; Code();
+          </h1>
+        </div>
+        <div class="hide">
+          <h1 class="hidetext5" style="opacity: 0">}</h1>
+        </div>
       </div>
-      <div class="hide">
-        <h1 class="hidetext2" style="opacity: 0;">&nbsp;&nbsp;&nbsp; Eat();</h1>
-      </div>
-      <div class="hide">
-        <h1 class="hidetext3" style="opacity: 0;">&nbsp;&nbsp;&nbsp; Sleep();</h1>
-      </div>
-      <div class="hide">
-        <h1 class="hidetext4" style="opacity: 0;">&nbsp;&nbsp;&nbsp; Code();</h1>
-      </div>
-      <div class="hide">
-        <h1 class="hidetext5" style="opacity: 0;">}</h1>
-      </div>
-
     </div>
 
-  </div>
+    <div class="intro2"></div>
 
-  <div class="intro2"></div>
-
-  <a name="home"></a>
-  <div id="nav" class="conatiner-fluid">
-    <div class="row justify-content-between">
-      <div class="col-6"><a href="" style=" font-family: 'Oswald', sans-serif;">Rajat Mondal</a></div>
-      <div class="col-1"><a href="home">Home</a></div>
-      <div class="col-1"><a href="#about">About</a></div>
-      <div class="col-1"><a href="#skill">Skills</a></div>
-      <div class="col-1"><a href="#work">Works</a></div>
-      <div class="col-1">
-        <a href="#contact">Contact</a>
+    <a name="home"></a>
+    <div id="nav" class="conatiner-fluid">
+      <div class="row justify-content-between">
+        <div class="col-6">
+          <a href="" style="font-family: 'Oswald', sans-serif">Rajat Mondal</a>
+        </div>
+        <div class="col-1"><a href="home">Home</a></div>
+        <div class="col-1"><a href="#about">About</a></div>
+        <div class="col-1"><a href="#skill">Skills</a></div>
+        <div class="col-1"><a href="#work">Works</a></div>
+        <div class="col-1">
+          <a href="#contact">Contact</a>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="container home">
-    <div class="row">
-      <div class="col-xl-6" data-aos="fade-right" data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
-        <h1 class="bon">Bonjour!</h1>
-        <h1 style="font-family: 'Poppins', sans-serif; font-weight: bolder">
-          I'm Rajat Mondal
-        </h1>
-        <h4>
-
-          <span class="typing" style="font-family: 'Ubuntu', sans-serif; font-weight: bold"></span>
-        </h4>
-        <button class="download" onclick="resume()">
-          <a href="assets//RajatMondal_CV_PDF.pdf" download="Rajat_Mondal_CV"><i class="fas fa-paperclip" style="color: white; transform: rotateZ(-42deg);"></i> Download Resume </a>
-          <lottie-player id="btnclick" src="https://assets2.lottiefiles.com/packages/lf20_i6sqnxav.json"
-            background="transparent" speed="1" style="width: 100%; height: 100%"></lottie-player>
-        </button>
-      </div>
-      <div class="col-xl-6 imgdiv" data-aos="fade-left" data-aos-anchor-placement="center-bottom"
-        data-aos-duration="1000">
-        <img src="./assets/me.jpg" alt="" />
-        <div class="des">
-          <div class="text">
-            <p>
-              When &#160;we &#160;TALK , &#160;we &#160;MOVE
-              <a href="mailto:rm2932002@gmail.com">Let's Talk <i class="fas fa-envelope-open"></i></a>
-            </p>
+    <div class="container home">
+      <div class="row">
+        <div
+          class="col-xl-6"
+          data-aos="fade-right"
+          data-aos-anchor-placement="center-bottom"
+          data-aos-duration="1000"
+        >
+          <h1 class="bon">Bonjour!</h1>
+          <h1 style="font-family: 'Poppins', sans-serif; font-weight: bolder">
+            I'm Rajat Mondal
+          </h1>
+          <h4>
+            <span
+              class="typing"
+              style="font-family: 'Ubuntu', sans-serif; font-weight: bold"
+            ></span>
+          </h4>
+          <button class="download" onclick="resume()">
+            <a href="assets//RajatMondal_CV_PDF.pdf"
+              download="Rajat Mondal Cv"><i
+                class="fas fa-paperclip"
+                style="color: white; transform: rotateZ(-42deg)"
+              ></i>
+              Download Resume
+            </a>
+            <lottie-player
+              id="btnclick"
+              src="https://assets2.lottiefiles.com/packages/lf20_i6sqnxav.json"
+              background="transparent"
+              speed="1"
+              style="width: 230%; height: 553%"
+               
+            ></lottie-player>
+          </button>
+        </div>
+        <div
+          class="col-xl-6 imgdiv"
+          data-aos="fade-left"
+          data-aos-anchor-placement="center-bottom"
+          data-aos-duration="1000"
+        >
+          <img src="./assets/me.jpg" alt="" />
+          <div class="des">
+            <div class="text">
+              <p>
+                When &#160;we &#160;TALK , &#160;we &#160;MOVE
+                <a href="mailto:rm2932002@gmail.com"
+                  >Let's Talk <i class="fas fa-envelope-open"></i
+                ></a>
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <button class="floatingnavbtn" id="btn" onclick="sidenav()">&#9776;</button>
-  <button class="floatingnavbtn1" id="btn1" onclick="sidenav()">
-    &#9776;
-  </button>
-  <div class="floatingnav">
-    <div class="wrapper">
-      <div class="main">
-        <a href="#home" onclick="aboutclick()">Home</a>
+    <button class="floatingnavbtn" id="btn" onclick="sidenav()">&#9776;</button>
+    <button class="floatingnavbtn1" id="btn1" onclick="sidenav()">
+      &#9776;
+    </button>
+    <div class="floatingnav">
+      <div class="wrapper">
+        <div class="main">
+          <a href="#home" onclick="aboutclick()">Home</a>
 
-        <a href="#about" onclick="aboutclick()">About</a>
+          <a href="#about" onclick="aboutclick()">About</a>
 
-        <a href="#skill" onclick="aboutclick()">Skills</a>
+          <a href="#skill" onclick="aboutclick()">Skills</a>
 
-        <a href="#work" onclick="aboutclick()">Works</a>
+          <a href="#work" onclick="aboutclick()">Works</a>
 
-        <a href="#contact" onclick="aboutclick()">Contact</a>
+          <a href="#contact" onclick="aboutclick()">Contact</a>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="about container">
-    <div class="row aboutlink">
-      <div class="col-12">
-        <h1><a name="about">ABOUT</a></h1>
+    <div class="about container">
+      <div class="row aboutlink">
+        <div class="col-12">
+          <h1><a name="about">ABOUT</a></h1>
+        </div>
+      </div>
+      <div class="row justify-content-between">
+        <div
+          class="col-lg-5 coding"
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom"
+          data-aos-duration="1000"
+        >
+          <lottie-player
+            src="https://assets1.lottiefiles.com/packages/lf20_HpFqiS.json"
+            background="transparent"
+            speed="1"
+            loop=""
+            autoplay=""
+          ></lottie-player>
+        </div>
+        <div
+          class="col-lg-5 description"
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom"
+          data-aos-duration="1000"
+        >
+          <h1 style="pointer-events: none">Hello ,I'm Rajat</h1>
+          <p style="pointer-events: none">
+            I'm an Engineering student with great interest in programming and
+            technologies I like solving problems and challenegs through
+            programming.Drawing is one of my hobbies also I am a MEAN/MERN
+            developer.Currently I'm looking for internships for showcasing my
+            knowledge and also working with other people.
+          </p>
+        </div>
       </div>
     </div>
-    <div class="row justify-content-between">
-      <div class="col-lg-5 coding" data-aos="fade-up" data-aos-anchor-placement="center-bottom"
-        data-aos-duration="1000">
-        <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_HpFqiS.json" background="transparent"
-          speed="1" loop="" autoplay=""></lottie-player>
+
+    <div class="container qualification">
+      <div class="row qual">
+        <h1><a name="qual">Qualification</a></h1>
       </div>
-      <div class="col-lg-5 description" data-aos="fade-up" data-aos-anchor-placement="center-bottom"
-        data-aos-duration="1000">
-        <h1 style="pointer-events: none">Hello ,I'm Rajat</h1>
-        <p style="pointer-events: none">
-          I'm an Engineering student with great interest in programming and
-          technologies I like solving problems and challenegs through
-          programming.Drawing is one of my hobbies also I am a MEAN/MERN
-          developer.Currently I'm looking for internships for showcasing my
-          knowledge and also working with other people.
+      <div
+        data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom"
+        data-aos-duration="1000"
+        class="timeline-item"
+        date-is="2019-2023"
+      >
+        <h1>B.Tech Electronics and Commuication (Pursuing)</h1>
+        <p>
+          B.P Poddar Institue of Management and Technology <br />
+          Board - M.A.K.A.U.T <br />
+          YGPA - 9.57 (2nd Year)
         </p>
+      </div>
 
+      <div
+        data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom"
+        data-aos-duration="1000"
+        class="timeline-item"
+        date-is="2019"
+      >
+        <h1>Higer Secondary</h1>
+        <p>
+          Dum Dum Baidyanath Institution for Boys <br />
+          Board - W.B.C.H.S.E <br />
+          Percentage - 92.6%
+        </p>
       </div>
-    </div>
-  </div>
 
-  <div class="container qualification">
-    <div class="row qual">
-      <h1><a name="qual">Qualification</a></h1>
-    </div>
-    <div data-aos="fade-up" data-aos-anchor-placement="center-bottom"
-    data-aos-duration="1000" class="timeline-item" date-is='2019-2023'>
-      <h1>B.Tech Electronics and Commuication (Pursuing)</h1>
-      <p>
-        B.P Poddar Institue of Management and Technology <br/>
-        Board - M.A.K.A.U.T <br/>
-        YGPA - 9.57 (2nd Year)
-      </p>
-    </div>
-    
-    <div data-aos="fade-up" data-aos-anchor-placement="center-bottom"
-    data-aos-duration="1000" class="timeline-item" date-is='2019'>
-      <h1>Higer Secondary</h1>
-      <p>
-        Dum Dum Baidyanath Institution for Boys <br/>
-        Board - W.B.C.H.S.E <br/>
-        Percentage - 92.6% 
-      </p>
-    </div>
-    
-    <div data-aos="fade-up" data-aos-anchor-placement="center-bottom"
-    data-aos-duration="1000" class="timeline-item" date-is='2017'>
-      <h1>Secondary</h1>
-      <p>
-          Dum Dum k.K Hindu Academy <br/>
-        Board - W.B.B.S.E <br/>
-        Percentage - 89%
-      </p>
-    </div>
-  </div> 
-  <div class="container skills">
-    <div class="row skill">
-      <h1><a name="skill">SKILLS</a></h1>
-    </div>
-    <div class="row script justify-content-center">
-      <div class="col-6" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
-        <h1><i class="fa fa-code" aria-hidden="true"></i> &#160;Scripting</h1>
+      <div
+        data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom"
+        data-aos-duration="1000"
+        class="timeline-item"
+        date-is="2017"
+      >
+        <h1>Secondary</h1>
+        <p>
+          Dum Dum k.K Hindu Academy <br />
+          Board - W.B.B.S.E <br />
+          Percentage - 89%
+        </p>
       </div>
     </div>
-    <div class="row scriptname justify-content-evenly">
-      <div class="col-md-3" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
-        <a href="#"><i class="fab fa-html5" aria-hidden="true"></i> Html</a>
+    <div class="container skills">
+      <div class="row skill">
+        <h1><a name="skill">SKILLS</a></h1>
       </div>
-      <div class="col-md-3" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
-        <a href="#"><i class="fab fa-css3" aria-hidden="true"></i> Css</a>
-      </div>
-      <div class="col-md-3" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
-        <a href="#"><i class="fab fa-js"></i> JavaScript</a>
-      </div>
-    </div>
-
-    <div class="row script justify-content-center">
-      <div class="col-6">
-        <h1><i class="fa fa-code" aria-hidden="true"></i> &#160;Libraries</h1>
-      </div>
-    </div>
-    <div class="row scriptname justify-content-evenly">
-      <div class="col-md-3" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
-        <a href="https://getbootstrap.com/" target="_blank"><i class="fab fa-bootstrap"></i> Bootstrap</a>
-      </div>
-      <div class="col-md-3" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
-        <a href="https://jquery.com/" target="_blank"><i class="fab fa-spotify" style="transform: rotate(220deg)"></i>
-          Jquery</a>
-      </div>
-      <div class="col-md-3" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
-        <a href="https://material-ui.com/" target="_blank">Material UI</a>
-      </div>
-    </div>
-    <div class="row script justify-content-center">
-      <div class="col-6">
-        <h1>
-          <i class="fa fa-code" aria-hidden="true"></i> &#160;ServerSide
-        </h1>
-      </div>
-    </div>
-    <div class="row scriptname justify-content-evenly">
-      <div class="col-md-3" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
-        <a href="https://nodejs.org/" target="_blank"><i class="fab fa-node-js"></i> NodeJs</a>
-      </div>
-      <div class="col-md-3" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
-        <a href="https://expressjs.com/" target="_blank">ExpressJs</a>
-      </div>
-    </div>
-
-    <div class="row script justify-content-center">
-      <div class="col-6">
-        <h1>
-          <i class="fa fa-code" aria-hidden="true"></i> &#160;Frameworks
-        </h1>
-      </div>
-    </div>
-    <div class="row scriptname justify-content-evenly">
-      <div class="col-md-3" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
-        <a href="https://angular.io/" target="_blank"><i class="fab fa-angular"></i> Angular</a>
-
-      </div>
-      <div class="col-md-3" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
-
-        <a href="https://reactjs.org/" target="_blank"><i class="fab fa-react"></i> React</a>
-      </div>
-    </div>
-
-    <div class="row script justify-content-center">
-      <div class="col-6">
-        <h1><i class="fa fa-code" aria-hidden="true"></i> &#160;Database</h1>
-      </div>
-    </div>
-    <div class="row scriptname justify-content-evenly">
-      <div class="col-md-3" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
-        <a href="https://www.mongodb.com/" target="_blank"><i class="fas fa-database"></i> MongoDb</a>
-      </div>
-      <div class="col-md-3" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
-        <a href="https://firebase.google.com/" target="_blank"> Firebase</a>
-      </div>
-    </div>
-
-    <div class="row script justify-content-center">
-      <div class="col-6">
-        <h1><i class="fa fa-code" aria-hidden="true"></i> &#160;Tools</h1>
-      </div>
-    </div>
-    <div class="row scriptname justify-content-evenly">
-      <div class="col-md-3" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
-        <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i> Github</a>
-      </div>
-      <div class="col-md-3" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
-        <a href="https://git-scm.com/" target="_blank"><i class="fab fa-git-alt"></i> Git</a>
-      </div>
-      <div class="col-md-3" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
-        <a href="https://app.netlify.com/" target="_blank"> Netlify</a>
-      </div>
-    </div>
-
-    <div class="row script justify-content-center">
-      <div class="col-6">
-        <h1><i class="fa fa-code" aria-hidden="true"></i> &#160;Graphics</h1>
-      </div>
-    </div>
-    <div class="row scriptname justify-content-evenly">
-      <div class="col-md-3" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
-        <a href="http://www.figma.jp/en/figma/" target="_blank"><i class="fab fa-figma"></i> Figma</a>
-      </div>
-      <div class="col-md-3" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
-        <a href="https://www.autodesk.com/products/sketchbook/overview" target="_blank">SketchBook</a>
-      </div>
-      <div class="col-md-3" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
-        <a href="https://www.photoshop.com/" target="_blank">Photoshop</a>
-      </div>
-    </div>
-
-    <div class="row script justify-content-center">
-      <div class="col-6">
-        <h1>
-          <i class="fa fa-code" aria-hidden="true"></i> &#160;Micellenious
-        </h1>
-      </div>
-    </div>
-    <div class="row scriptname justify-content-evenly">
-      <div class="col-md-3" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
-        <a href="#"><i class="fab fa-python"></i> Python</a>
-      </div>
-      <div class="col-md-3" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
-        <a href="#">C++</a>
-      </div>
-      <div class="col-md-3" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
-        <a href="#"><i class="fab fa-cuttlefish"></i> C </a>
-      </div>
-    </div>
-
-    <div class="row script justify-content-center">
-      <div class="col-6" style="width: 100%;">
-        <h1>
-          <i class="fa fa-code" aria-hidden="true"></i> &#160;Animations
-        </h1>
-      </div>
-    </div>
-    <div class="row scriptname justify-content-evenly">
-      <div class="col-md-3" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" style="margin-bottom: 0px">
-        <a href="https://animejs.com/" target="_blank">AnimeJs</a>
-      </div>
-    </div>
-    <div class="row scriptname justify-content-evenly">
-      <div class="col-md-3" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
-        <a href="https://greensock.com/gsap/" target="_blank">GSAP</a>
-      </div>
-      <div class="col-md-3" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" style="margin-bottom: 0px">
-        <a href="https://scrollmagic.io/" target="_blank">ScroolMagic</a>
-      </div>
-    </div>
-    <div class="row scriptname justify-content-evenly">
-      <div class="col-md-3" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
-        <a href="https://barba.js.org/" target="_blank">BarbaJs</a>
-      </div>
-      <div class="col-md-3" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
-        <a href="https://alvarotrigo.com/fullPage/" target="_blank">FullPageJs</a>
-      </div>
-      <div class="col-md-3" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" style="margin-bottom: 0px">
-        <a href="https://splitting.js.org/" target="_blank">Splitting Js</a>
-      </div>
-    </div>
-    <div class="row scriptname justify-content-evenly">
-      <div class="col-md-3" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
-        <a href="https://michalsnik.github.io/aos/" target="_blank">AOS</a>
-      </div>
-      <div class="col-md-3" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" style="margin-bottom: 0px">
-        <a href="https://www.javascripting.com/view/laxxx" target="_blank">Laxxx</a>
-      </div>
-    </div>
-    <div class="row scriptname justify-content-evenly">
-      <div class="col-md-3" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
-        <a href="https://threejs.org/" target="_blank">ThreeJs</a>
-      </div>
-    </div>
-  </div>
-  <div class="works container-fluid">
-    <div class="container">
-      <div class="row work">
-        <h1><a name="work">WORKS</a></h1>
-      </div>
-      <div class="row justify-content-evenly" style="margin-bottom: 30px;">
-        <div class="button button-6 worksactive" id="front">
-          <div class="spin"></div>
-          <a>Front-End Projects</a>
-        </div>
-        <div class="button button-6" id="api">
-          <div class="spin"></div>
-          <a>API Integrations</a>
-        </div>
-        <div class="button button-6" id="full">
-          <div class="spin"></div>
-          <a>Full Stack Projects</a>
-        </div>
-        <div class="button button-6" id="python">
-          <div class="spin"></div>
-          <a>Python and C</a>
-        </div>
-        <div class="button button-6" id="art">
-          <div class="spin"></div>
-          <a>Artworks</a>
+      <div class="row script justify-content-center">
+        <div
+          class="col-6"
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+        >
+          <h1><i class="fa fa-code" aria-hidden="true"></i> &#160;Scripting</h1>
         </div>
       </div>
-      <div id="arts" class="artclass">
-        <div class="row myimg justify-content-between">
-          <div class="col-lg-3" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-            <div class="innerimg" onclick="openimage(1)"></div>
-          </div>
-          <div class="col-lg-3" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-            <div class="innerimg" onclick="openimage(2)"></div>
-          </div>
-          <div class="col-lg-3" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-            <div class="innerimg" onclick="openimage(3)"></div>
-          </div>
+      <div class="row scriptname justify-content-evenly">
+        <div
+          class="col-md-3"
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+        >
+          <a href="#"><i class="fab fa-html5" aria-hidden="true"></i> Html</a>
         </div>
-        <div class="row myimg2 justify-content-between">
-          <div class="col-lg-3" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-            <div class="innerimg" onclick="openimage(4)"></div>
-          </div>
-          <div class="col-lg-3" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-            <div class="innerimg" onclick="openimage(5)"></div>
-          </div>
-          <div class="col-lg-3" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-            <div class="innerimg" onclick="openimage(6)"></div>
-          </div>
+        <div
+          class="col-md-3"
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+        >
+          <a href="#"><i class="fab fa-css3" aria-hidden="true"></i> Css</a>
         </div>
-        <div class="row myimg3 justify-content-between">
-          <div class="col-lg-3" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-            <div class="innerimg" onclick="openimage(7)"></div>
-          </div>
-          <div class="col-lg-3" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-            <div class="innerimg" onclick="openimage(8)"></div>
-          </div>
-          <div class="col-lg-3" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-            <div class="innerimg" onclick="openimage(9)"></div>
-          </div>
+        <div
+          class="col-md-3"
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+        >
+          <a href="#"><i class="fab fa-js"></i> JavaScript</a>
         </div>
       </div>
 
-      <div id="frontprojects" class="frontproj">
-        <div class="row justify-content-between">
-          <div class="col-lg-5 procol">
-            <div class="card-outer">
-              <div class="card-inner">
-                <div class="card-front">
+      <div class="row script justify-content-center">
+        <div class="col-6">
+          <h1><i class="fa fa-code" aria-hidden="true"></i> &#160;Libraries</h1>
+        </div>
+      </div>
+      <div class="row scriptname justify-content-evenly">
+        <div
+          class="col-md-3"
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+        >
+          <a href="https://getbootstrap.com/" target="_blank"
+            ><i class="fab fa-bootstrap"></i> Bootstrap</a
+          >
+        </div>
+        <div
+          class="col-md-3"
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+        >
+          <a href="https://jquery.com/" target="_blank"
+            ><i class="fab fa-spotify" style="transform: rotate(220deg)"></i>
+            Jquery</a
+          >
+        </div>
+        <div
+          class="col-md-3"
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+        >
+          <a href="https://material-ui.com/" target="_blank">Material UI</a>
+        </div>
+      </div>
+      <div class="row script justify-content-center">
+        <div class="col-6">
+          <h1>
+            <i class="fa fa-code" aria-hidden="true"></i> &#160;ServerSide
+          </h1>
+        </div>
+      </div>
+      <div class="row scriptname justify-content-evenly">
+        <div
+          class="col-md-3"
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+        >
+          <a href="https://nodejs.org/" target="_blank"
+            ><i class="fab fa-node-js"></i> NodeJs</a
+          >
+        </div>
+        <div
+          class="col-md-3"
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+        >
+          <a href="https://expressjs.com/" target="_blank">ExpressJs</a>
+        </div>
+      </div>
 
-                  <div class="component">
-                    <h2 class="cardtitle">Apple Website</h2>
-                    <p class="cardsubtitle">HTML, CSS, JS , FullPageJs</p>
-                  </div>
-                </div>
-                <div class="card-back">
-                  <p class="cardbody">
-                    A simple static website for Apple Procuts with Gsap Animation and Full page Js Library.
+      <div class="row script justify-content-center">
+        <div class="col-6">
+          <h1>
+            <i class="fa fa-code" aria-hidden="true"></i> &#160;Frameworks
+          </h1>
+        </div>
+      </div>
+      <div class="row scriptname justify-content-evenly">
+        <div
+          class="col-md-3"
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+        >
+          <a href="https://angular.io/" target="_blank"
+            ><i class="fab fa-angular"></i> Angular</a
+          >
+        </div>
+        <div
+          class="col-md-3"
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+        >
+          <a href="https://reactjs.org/" target="_blank"
+            ><i class="fab fa-react"></i> React</a
+          >
+        </div>
+      </div>
 
-                  </p>
-                  <a id="github" href="https://github.com/hyvip-ai/appleclone" target="_blank"><i
-                      class="fab fa-github"></i></a>
-                </div>
-              </div>
+      <div class="row script justify-content-center">
+        <div class="col-6">
+          <h1><i class="fa fa-code" aria-hidden="true"></i> &#160;Database</h1>
+        </div>
+      </div>
+      <div class="row scriptname justify-content-evenly">
+        <div
+          class="col-md-3"
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+        >
+          <a href="https://www.mongodb.com/" target="_blank"
+            ><i class="fas fa-database"></i> MongoDb</a
+          >
+        </div>
+        <div
+          class="col-md-3"
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+        >
+          <a href="https://firebase.google.com/" target="_blank"> Firebase</a>
+        </div>
+      </div>
+
+      <div class="row script justify-content-center">
+        <div class="col-6">
+          <h1><i class="fa fa-code" aria-hidden="true"></i> &#160;Tools</h1>
+        </div>
+      </div>
+      <div class="row scriptname justify-content-evenly">
+        <div
+          class="col-md-3"
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+        >
+          <a href="https://github.com/" target="_blank"
+            ><i class="fab fa-github"></i> Github</a
+          >
+        </div>
+        <div
+          class="col-md-3"
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+        >
+          <a href="https://git-scm.com/" target="_blank"
+            ><i class="fab fa-git-alt"></i> Git</a
+          >
+        </div>
+        <div
+          class="col-md-3"
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+        >
+          <a href="https://app.netlify.com/" target="_blank"> Netlify</a>
+        </div>
+      </div>
+
+      <div class="row script justify-content-center">
+        <div class="col-6">
+          <h1><i class="fa fa-code" aria-hidden="true"></i> &#160;Graphics</h1>
+        </div>
+      </div>
+      <div class="row scriptname justify-content-evenly">
+        <div
+          class="col-md-3"
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+        >
+          <a href="http://www.figma.jp/en/figma/" target="_blank"
+            ><i class="fab fa-figma"></i> Figma</a
+          >
+        </div>
+        <div
+          class="col-md-3"
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+        >
+          <a
+            href="https://www.autodesk.com/products/sketchbook/overview"
+            target="_blank"
+            >SketchBook</a
+          >
+        </div>
+        <div
+          class="col-md-3"
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+        >
+          <a href="https://www.photoshop.com/" target="_blank">Photoshop</a>
+        </div>
+      </div>
+
+      <div class="row script justify-content-center">
+        <div class="col-6">
+          <h1>
+            <i class="fa fa-code" aria-hidden="true"></i> &#160;Micellenious
+          </h1>
+        </div>
+      </div>
+      <div class="row scriptname justify-content-evenly">
+        <div
+          class="col-md-3"
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+        >
+          <a href="#"><i class="fab fa-python"></i> Python</a>
+        </div>
+        <div
+          class="col-md-3"
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+        >
+          <a href="#">C++</a>
+        </div>
+        <div
+          class="col-md-3"
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+        >
+          <a href="#"><i class="fab fa-cuttlefish"></i> C </a>
+        </div>
+      </div>
+
+      <div class="row script justify-content-center">
+        <div class="col-6" style="width: 100%">
+          <h1>
+            <i class="fa fa-code" aria-hidden="true"></i> &#160;Animations
+          </h1>
+        </div>
+      </div>
+      <div class="row scriptname justify-content-evenly">
+        <div
+          class="col-md-3"
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+          style="margin-bottom: 0px"
+        >
+          <a href="https://animejs.com/" target="_blank">AnimeJs</a>
+        </div>
+      </div>
+      <div class="row scriptname justify-content-evenly">
+        <div
+          class="col-md-3"
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+        >
+          <a href="https://greensock.com/gsap/" target="_blank">GSAP</a>
+        </div>
+        <div
+          class="col-md-3"
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+          style="margin-bottom: 0px"
+        >
+          <a href="https://scrollmagic.io/" target="_blank">ScroolMagic</a>
+        </div>
+      </div>
+      <div class="row scriptname justify-content-evenly">
+        <div
+          class="col-md-3"
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+        >
+          <a href="https://barba.js.org/" target="_blank">BarbaJs</a>
+        </div>
+        <div
+          class="col-md-3"
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+        >
+          <a href="https://alvarotrigo.com/fullPage/" target="_blank"
+            >FullPageJs</a
+          >
+        </div>
+        <div
+          class="col-md-3"
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+          style="margin-bottom: 0px"
+        >
+          <a href="https://splitting.js.org/" target="_blank">Splitting Js</a>
+        </div>
+      </div>
+      <div class="row scriptname justify-content-evenly">
+        <div
+          class="col-md-3"
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+        >
+          <a href="https://michalsnik.github.io/aos/" target="_blank">AOS</a>
+        </div>
+        <div
+          class="col-md-3"
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+          style="margin-bottom: 0px"
+        >
+          <a href="https://www.javascripting.com/view/laxxx" target="_blank"
+            >Laxxx</a
+          >
+        </div>
+      </div>
+      <div class="row scriptname justify-content-evenly">
+        <div
+          class="col-md-3"
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+        >
+          <a href="https://threejs.org/" target="_blank">ThreeJs</a>
+        </div>
+      </div>
+    </div>
+    <div class="works container-fluid">
+      <div class="container">
+        <div class="row work">
+          <h1><a name="work">WORKS</a></h1>
+        </div>
+        <div class="row justify-content-evenly" style="margin-bottom: 30px">
+          <div class="button button-6 worksactive" id="front">
+            <div class="spin"></div>
+            <a>Front-End Projects</a>
+          </div>
+          <div class="button button-6" id="api">
+            <div class="spin"></div>
+            <a>API Integrations</a>
+          </div>
+          <div class="button button-6" id="full">
+            <div class="spin"></div>
+            <a>Full Stack Projects</a>
+          </div>
+          <div class="button button-6" id="python">
+            <div class="spin"></div>
+            <a>Python and C</a>
+          </div>
+          <div class="button button-6" id="art">
+            <div class="spin"></div>
+            <a>Artworks</a>
+          </div>
+        </div>
+        <div id="arts" class="artclass">
+          <div class="row myimg justify-content-between">
+            <div
+              class="col-lg-3"
+              data-aos="fade-up"
+              data-aos-anchor-placement="center-bottom"
+            >
+              <div class="innerimg" onclick="openimage(1)"></div>
+            </div>
+            <div
+              class="col-lg-3"
+              data-aos="fade-up"
+              data-aos-anchor-placement="center-bottom"
+            >
+              <div class="innerimg" onclick="openimage(2)"></div>
+            </div>
+            <div
+              class="col-lg-3"
+              data-aos="fade-up"
+              data-aos-anchor-placement="center-bottom"
+            >
+              <div class="innerimg" onclick="openimage(3)"></div>
             </div>
           </div>
-          <div class="col-lg-5 procol">
-            <div class="card-outer">
-              <div class="card-inner">
-                <div class="card-front">
-
-                  <div class="component">
-                    <h2 class="cardtitle">Real Estate Website</h2>
-                    <p class="cardsubtitle">HTML, CSS ,Bootstrap</p>
-
-                  </div>
-                </div>
-                <div class="card-back">
-                  <p class="cardbody">
-                    A simple static real estate responsive website layout where Bootstarp was used for
-                    responsiveness.Here I used Font Awesome Icons.
-                  </p>
-                  <a id="github" href="https://github.com/hyvip-ai/clone" target="_blank"><i
-                      class="fab fa-github"></i></a>
-                </div>
-              </div>
+          <div class="row myimg2 justify-content-between">
+            <div
+              class="col-lg-3"
+              data-aos="fade-up"
+              data-aos-anchor-placement="center-bottom"
+            >
+              <div class="innerimg" onclick="openimage(4)"></div>
+            </div>
+            <div
+              class="col-lg-3"
+              data-aos="fade-up"
+              data-aos-anchor-placement="center-bottom"
+            >
+              <div class="innerimg" onclick="openimage(5)"></div>
+            </div>
+            <div
+              class="col-lg-3"
+              data-aos="fade-up"
+              data-aos-anchor-placement="center-bottom"
+            >
+              <div class="innerimg" onclick="openimage(6)"></div>
             </div>
           </div>
-        </div>
-        <div class="row justify-content-between">
-          <div class="col-lg-5 procol">
-            <div class="card-outer">
-              <div class="card-inner">
-                <div class="card-front">
-
-                  <div class="component">
-                    <h2 class="cardtitle">E-Commerce Website</h2>
-                    <p class="cardsubtitle">HTML, CSS, Bootstarp</p>
-                  </div>
-                </div>
-                <div class="card-back">
-                  <p class="cardbody">
-                    A simple Static E-commerece Website made using HTML, CSS , Bootstrap.
-                  </p>
-                  <a id="github" href="https://github.com/hyvip-ai/Clone2" target="_blank"><i
-                      class="fab fa-github"></i></a>
-                </div>
-              </div>
+          <div class="row myimg3 justify-content-between">
+            <div
+              class="col-lg-3"
+              data-aos="fade-up"
+              data-aos-anchor-placement="center-bottom"
+            >
+              <div class="innerimg" onclick="openimage(7)"></div>
             </div>
-          </div>
-          <div class="col-lg-5 procol">
-            <div class="card-outer">
-              <div class="card-inner">
-                <div class="card-front">
-
-                  <div class="component">
-                    <h2 class="cardtitle">Typing Speed Calculator</h2>
-                    <p class="cardsubtitle">HTML, CSS, JS</p>
-                  </div>
-                </div>
-                <div class="card-back">
-                  <p class="cardbody">
-                    A Simple responsive website which can generate a sentance adn user can check his/her typing speed by
-                    typing that sentance.
-                  </p>
-                  <a id="github" href="https://github.com/hyvip-ai/Typing-speed" target="_blank"><i
-                      class="fab fa-github"></i></a>
-                </div>
-              </div>
+            <div
+              class="col-lg-3"
+              data-aos="fade-up"
+              data-aos-anchor-placement="center-bottom"
+            >
+              <div class="innerimg" onclick="openimage(8)"></div>
             </div>
-          </div>
-        </div>
-        <div class="row justify-content-between">
-          <div class="col-lg-5 procol">
-            <div class="card-outer">
-              <div class="card-inner">
-                <div class="card-front">
-
-                  <div class="component">
-                    <h2 class="cardtitle">Stone, Paper, Scissors Game</h2>
-                    <p class="cardsubtitle">HTML, CSS, JS</p>
-                  </div>
-                </div>
-                <div class="card-back">
-                  <p class="cardbody">
-                    This is a simple website where a user can play Stone, Paper, Scissors against Computer after
-                    entering his/her name through prompt.
-                  </p>
-                  <a id="github" href="https://github.com/hyvip-ai/Stone-Paper-Scissors" target="_blank"><i
-                      class="fab fa-github"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-5 procol">
-            <div class="card-outer">
-              <div class="card-inner">
-                <div class="card-front">
-
-                  <div class="component">
-                    <h2 class="cardtitle">Staggered Gallery</h2>
-                    <p class="cardsubtitle">Html, CSS</p>
-                  </div>
-                </div>
-                <div class="card-back">
-                  <p class="cardbody">
-                    A simple Staggered Image Gallery Made with CSS grid System.
-                  </p>
-                  <a id="github" href="https://github.com/hyvip-ai/staggered_gallery" target="_blank"><i
-                      class="fab fa-github"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row justify-content-between">
-          <div class="col-lg-5 procol">
-            <div class="card-outer">
-              <div class="card-inner">
-                <div class="card-front">
-
-                  <div class="component">
-                    <h2 class="cardtitle">Angular Calculator</h2>
-                    <p class="cardsubtitle">Angular</p>
-                  </div>
-                </div>
-                <div class="card-back">
-                  <p class="cardbody">
-                    A simple and fully functional Angular Calculator.
-                  </p>
-                  <a id="github" href="https://github.com/hyvip-ai/Angular_Calculator" target="_blank"><i
-                      class="fab fa-github"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-5 procol">
-            <div class="card-outer">
-              <div class="card-inner">
-                <div class="card-front">
-
-                  <div class="component">
-                    <h2 class="cardtitle">Portfolio</h2>
-                    <p class="cardsubtitle">HTML, CSS, JS, jQuery</p>
-                  </div>
-                </div>
-                <div class="card-back">
-                  <p class="cardbody">
-                    My simple and responsive portfolio where I used many animation Libraries and Bootstarp and jQuery.
-                  </p>
-                  <a id="github" href="https://github.com/hyvip-ai/Portfolio" target="_blank"><i
-                      class="fab fa-github"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="apiproject" class="apisprojectsdiv">
-        <div class="row justify-content-between">
-          <div class="col-lg-5 procol">
-            <div class="card-outer">
-              <div class="card-inner">
-                <div class="card-front">
-
-                  <div class="component">
-                    <h2 class="cardtitle">HandWrting</h2>
-                    <p class="cardsubtitle">HTML, CSS, JS , handwriting.api</p>
-                  </div>
-                </div>
-                <div class="card-back">
-                  <p class="cardbody">
-                    A simple responsive website where if someone enter some text it will convert it to writtent text and
-                    user can download that in pdf format.
-
-                  </p>
-                  <a id="github" href="https://github.com/hyvip-ai/handwriting" target="_blank"><i
-                      class="fab fa-github"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-5 procol">
-            <div class="card-outer">
-              <div class="card-inner">
-                <div class="card-front">
-
-                  <div class="component">
-                    <h2 class="cardtitle">News Api</h2>
-                    <p class="cardsubtitle">Angular, MediaStack, News.org</p>
-
-                  </div>
-                </div>
-                <div class="card-back">
-                  <p class="cardbody">
-                    A simple responsive website using Angular framework where user can read latest news and also search
-                    news by category.
-                  </p>
-                  <a id="github" href="https://github.com/hyvip-ai/News" target="_blank"><i
-                      class="fab fa-github"></i></a>
-                </div>
-              </div>
+            <div
+              class="col-lg-3"
+              data-aos="fade-up"
+              data-aos-anchor-placement="center-bottom"
+            >
+              <div class="innerimg" onclick="openimage(9)"></div>
             </div>
           </div>
         </div>
-        <div class="row justify-content-between">
-          <div class="col-lg-5 procol">
-            <div class="card-outer">
-              <div class="card-inner">
-                <div class="card-front">
 
-                  <div class="component">
-                    <h2 class="cardtitle">Food Api</h2>
-                    <p class="cardsubtitle">Angular , Spoonacular</p>
-                  </div>
-                </div>
-                <div class="card-back">
-                  <p class="cardbody">
-                    A simple responsive website using Angular through which a user can search any recipe by incrediants,
-                    diets etc.Spoonacular api is used to create this website.
-
-                  </p>
-                  <a id="github" href="https://github.com/hyvip-ai/FoodApi" target="_blank"><i
-                      class="fab fa-github"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-5 procol">
-            <div class="card-outer">
-              <div class="card-inner">
-                <div class="card-front">
-
-                  <div class="component">
-                    <h2 class="cardtitle">Face Detection</h2>
-                    <p class="cardsubtitle">HTML, JS, Faceapi.org</p>
-
-                  </div>
-                </div>
-                <div class="card-back">
-                  <p class="cardbody">
-                    A simple website where allowing the video access the user can detect one or multiple faces visible
-                    through camera, also it shows gender, expression and age.
-                  </p>
-                  <a id="github" href="https://github.com/hyvip-ai/FaceDetection" target="_blank"><i
-                      class="fab fa-github"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="fullprojects" class="fullstack">
-
-        <div class="row justify-content-between">
-          
-          <div class="col-lg-5 procol">
-
+        <div id="frontprojects" class="frontproj">
+          <div class="row justify-content-between">
+            <div class="col-lg-5 procol">
               <div class="card-outer">
-              <div class="card-inner">
-                <div class="card-front">
-
-                  <div class="component">
-                    <h2 class="cardtitle">React Firebase Chat Application</h2>
-                    <p class="cardsubtitle">React, Firebase</p>
+                <div class="card-inner">
+                  <div class="card-front">
+                    <div class="component">
+                      <h2 class="cardtitle">Apple Website</h2>
+                      <p class="cardsubtitle">HTML, CSS, JS , FullPageJs</p>
+                    </div>
                   </div>
-                </div>
-                <div class="card-back">
-                  <p class="cardbody">
-                    A simple Chat Application with React, Firebase and react-firebase-hooks
-
-                  </p>
-                  <a id="github" href="https://github.com/hyvip-ai/react-firebase-realtime-chat-appliction" target="_blank"><i
-                      class="fab fa-github"></i></a>
-                </div>
-              </div>
-            </div>   
-       
-          </div>
-          <div class="col-lg-5 procol">
-            <div class="card-outer">
-              <div class="card-inner">
-                <div class="card-front">
-
-                  <div class="component">
-                    <h2 class="cardtitle">Shopify Clone</h2>
-                    <p class="cardsubtitle">Angular, Node.js</p>
-
+                  <div class="card-back">
+                    <p class="cardbody">
+                      A simple static website for Apple Procuts with Gsap
+                      Animation and Full page Js Library.
+                    </p>
+                    <a
+                      id="github"
+                      href="https://github.com/hyvip-ai/appleclone"
+                      target="_blank"
+                      ><i class="fab fa-github"></i
+                    ></a>
                   </div>
-                </div>
-                <div class="card-back">
-                  <p class="cardbody">
-                    A simple Shopify Clone where You can crrete your Own Custom Webiste and Host it.
-                  </p>
-                  <a id="github" href="https://github.com/hyvip-ai/Shopify-clone" target="_blank"><i
-                      class="fab fa-github"></i></a>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-
-
-        <div class="row justify-content-between">
-          
-          <div class="col-lg-5 procol">
-
+            <div class="col-lg-5 procol">
               <div class="card-outer">
-              <div class="card-inner">
-                <div class="card-front">
-
-                  <div class="component">
-                    <h2 class="cardtitle">Role Base Authentication</h2>
-                    <p class="cardsubtitle">Angular , Node.js</p>
+                <div class="card-inner">
+                  <div class="card-front">
+                    <div class="component">
+                      <h2 class="cardtitle">Real Estate Website</h2>
+                      <p class="cardsubtitle">HTML, CSS ,Bootstrap</p>
+                    </div>
                   </div>
-                </div>
-                <div class="card-back">
-                  <p class="cardbody">
-                    A simple Role Based Authentication System using Angular Role Guard and Nodejs.
-
-                  </p>
-                  <a id="github" href="https://github.com/hyvip-ai/angular_role_guard_front" target="_blank"><i
-                      class="fab fa-github"></i></a>
+                  <div class="card-back">
+                    <p class="cardbody">
+                      A simple static real estate responsive website layout
+                      where Bootstarp was used for responsiveness.Here I used
+                      Font Awesome Icons.
+                    </p>
+                    <a
+                      id="github"
+                      href="https://github.com/hyvip-ai/clone"
+                      target="_blank"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                  </div>
                 </div>
               </div>
-            </div>   
-       
+            </div>
           </div>
-          <div class="col-lg-5 procol">
-            <div class="card-outer">
-              <div class="card-inner">
-                <div class="card-front">
-
-                  <div class="component">
-                    <h2 class="cardtitle">Forum Website</h2>
-                    <p class="cardsubtitle">Angular, Node.js</p>
-
+          <div class="row justify-content-between">
+            <div class="col-lg-5 procol">
+              <div class="card-outer">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <div class="component">
+                      <h2 class="cardtitle">E-Commerce Website</h2>
+                      <p class="cardsubtitle">HTML, CSS, Bootstarp</p>
+                    </div>
+                  </div>
+                  <div class="card-back">
+                    <p class="cardbody">
+                      A simple Static E-commerece Website made using HTML, CSS ,
+                      Bootstrap.
+                    </p>
+                    <a
+                      id="github"
+                      href="https://github.com/hyvip-ai/Clone2"
+                      target="_blank"
+                      ><i class="fab fa-github"></i
+                    ></a>
                   </div>
                 </div>
-                <div class="card-back">
-                  <p class="cardbody">
-                    A simple Forum web application where a user can post question and other can answer that.Also other
-                    users can vote the answers if its working or not.
-                  </p>
-                  <a id="github" href="https://github.com/hyvip-ai/forum_backend" target="_blank"><i
-                      class="fab fa-github"></i></a>
+              </div>
+            </div>
+            <div class="col-lg-5 procol">
+              <div class="card-outer">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <div class="component">
+                      <h2 class="cardtitle">Typing Speed Calculator</h2>
+                      <p class="cardsubtitle">HTML, CSS, JS</p>
+                    </div>
+                  </div>
+                  <div class="card-back">
+                    <p class="cardbody">
+                      A Simple responsive website which can generate a sentance
+                      adn user can check his/her typing speed by typing that
+                      sentance.
+                    </p>
+                    <a
+                      id="github"
+                      href="https://github.com/hyvip-ai/Typing-speed"
+                      target="_blank"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-between">
+            <div class="col-lg-5 procol">
+              <div class="card-outer">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <div class="component">
+                      <h2 class="cardtitle">Stone, Paper, Scissors Game</h2>
+                      <p class="cardsubtitle">HTML, CSS, JS</p>
+                    </div>
+                  </div>
+                  <div class="card-back">
+                    <p class="cardbody">
+                      This is a simple website where a user can play Stone,
+                      Paper, Scissors against Computer after entering his/her
+                      name through prompt.
+                    </p>
+                    <a
+                      id="github"
+                      href="https://github.com/hyvip-ai/Stone-Paper-Scissors"
+                      target="_blank"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5 procol">
+              <div class="card-outer">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <div class="component">
+                      <h2 class="cardtitle">Staggered Gallery</h2>
+                      <p class="cardsubtitle">Html, CSS</p>
+                    </div>
+                  </div>
+                  <div class="card-back">
+                    <p class="cardbody">
+                      A simple Staggered Image Gallery Made with CSS grid
+                      System.
+                    </p>
+                    <a
+                      id="github"
+                      href="https://github.com/hyvip-ai/staggered_gallery"
+                      target="_blank"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row justify-content-between">
+            <div class="col-lg-5 procol">
+              <div class="card-outer">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <div class="component">
+                      <h2 class="cardtitle">Angular Calculator</h2>
+                      <p class="cardsubtitle">Angular</p>
+                    </div>
+                  </div>
+                  <div class="card-back">
+                    <p class="cardbody">
+                      A simple and fully functional Angular Calculator.
+                    </p>
+                    <a
+                      id="github"
+                      href="https://github.com/hyvip-ai/Angular_Calculator"
+                      target="_blank"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5 procol">
+              <div class="card-outer">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <div class="component">
+                      <h2 class="cardtitle">Portfolio</h2>
+                      <p class="cardsubtitle">HTML, CSS, JS, jQuery</p>
+                    </div>
+                  </div>
+                  <div class="card-back">
+                    <p class="cardbody">
+                      My simple and responsive portfolio where I used many
+                      animation Libraries and Bootstarp and jQuery.
+                    </p>
+                    <a
+                      id="github"
+                      href="https://github.com/hyvip-ai/Portfolio"
+                      target="_blank"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-
-        <div class="row justify-content-between">
-          <div class="col-lg-5 procol">
-            <div class="card-outer">
-              <div class="card-inner">
-                <div class="card-front">
-
-                  <div class="component">
-                    <h2 class="cardtitle">Chat Application</h2>
-                    <p class="cardsubtitle">Angular, Node.js</p>
+        <div id="apiproject" class="apisprojectsdiv">
+          <div class="row justify-content-between">
+            <div class="col-lg-5 procol">
+              <div class="card-outer">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <div class="component">
+                      <h2 class="cardtitle">HandWrting</h2>
+                      <p class="cardsubtitle">
+                        HTML, CSS, JS , handwriting.api
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card-back">
+                    <p class="cardbody">
+                      A simple responsive website where if someone enter some
+                      text it will convert it to writtent text and user can
+                      download that in pdf format.
+                    </p>
+                    <a
+                      id="github"
+                      href="https://github.com/hyvip-ai/handwriting"
+                      target="_blank"
+                      ><i class="fab fa-github"></i
+                    ></a>
                   </div>
                 </div>
-                <div class="card-back">
-                  <p class="cardbody">
-                    A simple chat application using Angular and Node.js, Where user can make group and chat together.
-
-                  </p>
-                  <a id="github" href="https://github.com/hyvip-ai/chatapp_backend" target="_blank"><i
-                      class="fab fa-github"></i></a>
+              </div>
+            </div>
+            <div class="col-lg-5 procol">
+              <div class="card-outer">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <div class="component">
+                      <h2 class="cardtitle">News Api</h2>
+                      <p class="cardsubtitle">Angular, MediaStack, News.org</p>
+                    </div>
+                  </div>
+                  <div class="card-back">
+                    <p class="cardbody">
+                      A simple responsive website using Angular framework where
+                      user can read latest news and also search news by
+                      category.
+                    </p>
+                    <a
+                      id="github"
+                      href="https://github.com/hyvip-ai/News"
+                      target="_blank"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-5 procol">
-            <div class="card-outer">
-              <div class="card-inner">
-                <div class="card-front">
-
-                  <div class="component">
-                    <h2 class="cardtitle">Blogging Application</h2>
-                    <p class="cardsubtitle">Angular, Node.js</p>
-
+          <div class="row justify-content-between">
+            <div class="col-lg-5 procol">
+              <div class="card-outer">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <div class="component">
+                      <h2 class="cardtitle">Food Api</h2>
+                      <p class="cardsubtitle">Angular , Spoonacular</p>
+                    </div>
+                  </div>
+                  <div class="card-back">
+                    <p class="cardbody">
+                      A simple responsive website using Angular through which a
+                      user can search any recipe by incrediants, diets
+                      etc.Spoonacular api is used to create this website.
+                    </p>
+                    <a
+                      id="github"
+                      href="https://github.com/hyvip-ai/FoodApi"
+                      target="_blank"
+                      ><i class="fab fa-github"></i
+                    ></a>
                   </div>
                 </div>
-                <div class="card-back">
-                  <p class="cardbody">
-                    A blogging web application, where and user can post blog and also save blog to read later.
-                  </p>
-                  <a id="github" href="https://github.com/hyvip-ai/blogger-backend" target="_blank"><i
-                      class="fab fa-github"></i></a>
+              </div>
+            </div>
+            <div class="col-lg-5 procol">
+              <div class="card-outer">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <div class="component">
+                      <h2 class="cardtitle">Face Detection</h2>
+                      <p class="cardsubtitle">HTML, JS, Faceapi.org</p>
+                    </div>
+                  </div>
+                  <div class="card-back">
+                    <p class="cardbody">
+                      A simple website where allowing the video access the user
+                      can detect one or multiple faces visible through camera,
+                      also it shows gender, expression and age.
+                    </p>
+                    <a
+                      id="github"
+                      href="https://github.com/hyvip-ai/FaceDetection"
+                      target="_blank"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-
-        <div class="row justify-content-between">
-          <div class="col-lg-5 procol">
-            <div class="card-outer">
-              <div class="card-inner">
-                <div class="card-front">
-
-                  <div class="component">
-                    <h2 class="cardtitle">Discord Bot</h2>
-                    <p class="cardsubtitle">Node.js , discord.js</p>
+        <div id="fullprojects" class="fullstack">
+          <div class="row justify-content-between">
+            <div class="col-lg-5 procol">
+              <div class="card-outer">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <div class="component">
+                      <h2 class="cardtitle">React Firebase Chat Application</h2>
+                      <p class="cardsubtitle">React, Firebase</p>
+                    </div>
+                  </div>
+                  <div class="card-back">
+                    <p class="cardbody">
+                      A simple Chat Application with React, Firebase and
+                      react-firebase-hooks
+                    </p>
+                    <a
+                      id="github"
+                      href="https://github.com/hyvip-ai/react-firebase-realtime-chat-appliction"
+                      target="_blank"
+                      ><i class="fab fa-github"></i
+                    ></a>
                   </div>
                 </div>
-                <div class="card-back">
-                  <p class="cardbody">
-                    A simple discord bot who can greet someone, play music , show weather.
-
-                  </p>
-                  <a id="github" href="https://github.com/hyvip-ai/discord__bot" target="_blank"><i
-                      class="fab fa-github"></i></a>
+              </div>
+            </div>
+            <div class="col-lg-5 procol">
+              <div class="card-outer">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <div class="component">
+                      <h2 class="cardtitle">Shopify Clone</h2>
+                      <p class="cardsubtitle">Angular, Node.js</p>
+                    </div>
+                  </div>
+                  <div class="card-back">
+                    <p class="cardbody">
+                      A simple Shopify Clone where You can crrete your Own
+                      Custom Webiste and Host it.
+                    </p>
+                    <a
+                      id="github"
+                      href="https://github.com/hyvip-ai/Shopify-clone"
+                      target="_blank"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-5 procol">
-            <div class="card-outer">
-              <div class="card-inner">
-                <div class="card-front">
 
-                  <div class="component">
-                    <h2 class="cardtitle">Appointment Booking App</h2>
-                    <p class="cardsubtitle">Node.js , Angular</p>
-
+          <div class="row justify-content-between">
+            <div class="col-lg-5 procol">
+              <div class="card-outer">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <div class="component">
+                      <h2 class="cardtitle">Role Base Authentication</h2>
+                      <p class="cardsubtitle">Angular , Node.js</p>
+                    </div>
+                  </div>
+                  <div class="card-back">
+                    <p class="cardbody">
+                      A simple Role Based Authentication System using Angular
+                      Role Guard and Nodejs.
+                    </p>
+                    <a
+                      id="github"
+                      href="https://github.com/hyvip-ai/angular_role_guard_front"
+                      target="_blank"
+                      ><i class="fab fa-github"></i
+                    ></a>
                   </div>
                 </div>
-                <div class="card-back">
-                  <p class="cardbody">
-                    A simple Appointment booking website made with Angular , Node.js and maximum 10 appointment can be
-                    booked on one day.
-                  </p>
-                  <a id="github" href="https://github.com/hyvip-ai/appointment-app" target="_blank"><i
-                      class="fab fa-github"></i></a>
+              </div>
+            </div>
+            <div class="col-lg-5 procol">
+              <div class="card-outer">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <div class="component">
+                      <h2 class="cardtitle">Forum Website</h2>
+                      <p class="cardsubtitle">Angular, Node.js</p>
+                    </div>
+                  </div>
+                  <div class="card-back">
+                    <p class="cardbody">
+                      A simple Forum web application where a user can post
+                      question and other can answer that.Also other users can
+                      vote the answers if its working or not.
+                    </p>
+                    <a
+                      id="github"
+                      href="https://github.com/hyvip-ai/forum_backend"
+                      target="_blank"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row justify-content-between">
+            <div class="col-lg-5 procol">
+              <div class="card-outer">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <div class="component">
+                      <h2 class="cardtitle">Chat Application</h2>
+                      <p class="cardsubtitle">Angular, Node.js</p>
+                    </div>
+                  </div>
+                  <div class="card-back">
+                    <p class="cardbody">
+                      A simple chat application using Angular and Node.js, Where
+                      user can make group and chat together.
+                    </p>
+                    <a
+                      id="github"
+                      href="https://github.com/hyvip-ai/chatapp_backend"
+                      target="_blank"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5 procol">
+              <div class="card-outer">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <div class="component">
+                      <h2 class="cardtitle">Blogging Application</h2>
+                      <p class="cardsubtitle">Angular, Node.js</p>
+                    </div>
+                  </div>
+                  <div class="card-back">
+                    <p class="cardbody">
+                      A blogging web application, where and user can post blog
+                      and also save blog to read later.
+                    </p>
+                    <a
+                      id="github"
+                      href="https://github.com/hyvip-ai/blogger-backend"
+                      target="_blank"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row justify-content-between">
+            <div class="col-lg-5 procol">
+              <div class="card-outer">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <div class="component">
+                      <h2 class="cardtitle">Discord Bot</h2>
+                      <p class="cardsubtitle">Node.js , discord.js</p>
+                    </div>
+                  </div>
+                  <div class="card-back">
+                    <p class="cardbody">
+                      A simple discord bot who can greet someone, play music ,
+                      show weather.
+                    </p>
+                    <a
+                      id="github"
+                      href="https://github.com/hyvip-ai/discord__bot"
+                      target="_blank"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5 procol">
+              <div class="card-outer">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <div class="component">
+                      <h2 class="cardtitle">Appointment Booking App</h2>
+                      <p class="cardsubtitle">Node.js , Angular</p>
+                    </div>
+                  </div>
+                  <div class="card-back">
+                    <p class="cardbody">
+                      A simple Appointment booking website made with Angular ,
+                      Node.js and maximum 10 appointment can be booked on one
+                      day.
+                    </p>
+                    <a
+                      id="github"
+                      href="https://github.com/hyvip-ai/appointment-app"
+                      target="_blank"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        <div id="pythonprojects" class="pytproj">
+          <div class="row justify-content-between">
+            <div class="col-lg-5 procol">
+              <div class="card-outer">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <div class="component">
+                      <h2 class="cardtitle">Desktop Assistant</h2>
+                      <p class="cardsubtitle">Pyhton</p>
+                    </div>
+                  </div>
+                  <div class="card-back">
+                    <p class="cardbody">
+                      A simple desktop assitant which helps in Internet
+                      Automation, as well as some small stuffs like greeting ,
+                      telling time , telling date opening calculator , play
+                      songs.
+                    </p>
+                    <a
+                      id="github"
+                      href="https://github.com/hyvip-ai/assiatant"
+                      target="_blank"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5 procol">
+              <div class="card-outer">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <div class="component">
+                      <h2 class="cardtitle">Air Canvas</h2>
+                      <p class="cardsubtitle">Python , OpenCV</p>
+                    </div>
+                  </div>
+                  <div class="card-back">
+                    <p class="cardbody">
+                      A simple Aircanvas using python Opencv where using a bid
+                      in air a user can draw and write anything on the canvas in
+                      screen.
+                    </p>
+                    <a
+                      id="github"
+                      href="https://github.com/hyvip-ai/aircanvas"
+                      target="_blank"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row justify-content-between">
+            <div class="col-lg-5 procol">
+              <div class="card-outer">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <div class="component">
+                      <h2 class="cardtitle">Hand Detection</h2>
+                      <p class="cardsubtitle">Python , Media Pipe</p>
+                    </div>
+                  </div>
+                  <div class="card-back">
+                    <p class="cardbody">
+                      A simple python project to detect 2 human hands.
+                    </p>
+                    <a
+                      id="github"
+                      href="https://github.com/hyvip-ai/handdetection"
+                      target="_blank"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5 procol">
+              <div class="card-outer">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <div class="component">
+                      <h2 class="cardtitle">Harry Potter Cloak</h2>
+                      <p class="cardsubtitle">Python, OpenCV</p>
+                    </div>
+                  </div>
+                  <div class="card-back">
+                    <p class="cardbody">
+                      A small python project where using one colour we can hide.
+                    </p>
+                    <a
+                      id="github"
+                      href="https://github.com/hyvip-ai/harry_potter_cloak"
+                      target="_blank"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row justify-content-center">
+            <div class="col-lg-5 procol">
+              <div class="card-outer">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <div class="component">
+                      <h2 class="cardtitle">Tic Tac Toe</h2>
+                      <p class="cardsubtitle">C Programming</p>
+                    </div>
+                  </div>
+                  <div class="card-back">
+                    <p class="cardbody">
+                      A simple Tic-Tac-Toe game Using C programming Language.
+                    </p>
+                    <a
+                      id="github"
+                      href="https://github.com/hyvip-ai/tictactoeC"
+                      target="_blank"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row head">
+          <div class="col-12">
+            <h1><i class="fas fa-map-pin"></i> &#160;Work Experience</h1>
+          </div>
+        </div>
+
+        <ul class="timeline" style="margin-bottom: 60px">
+          <li>
+            <div class="direction-r">
+              <div class="flag-wrapper">
+                <span class="hexa"></span>
+                <span class="flag">AGPayTech</span>
+                <span class="time-wrapper"
+                  ><span class="time">Junior Angular Developer</span></span
+                >
+              </div>
+              <div class="desc">August 2021 - Present</div>
+            </div>
+          </li>
+
+          <li>
+            <div class="direction-l">
+              <div class="flag-wrapper">
+                <span class="hexa"></span>
+                <span class="flag">Upjao AgroTech</span>
+                <span class="time-wrapper"
+                  ><span class="time">Full Stack Developer</span></span
+                >
+              </div>
+              <div class="desc">
+                Building an Admin Panel with Angular and Firebase <br />
+                June 2021 - Aug 2021
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="direction-r">
+              <div class="flag-wrapper">
+                <span class="hexa"></span>
+                <span class="flag">Srchout</span>
+                <span class="time-wrapper"
+                  ><span class="time">Full Stack Developer</span></span
+                >
+              </div>
+              <div class="desc">
+                Designing and building an E-Learning Website with Html, Css , JS
+                and Laravel. <br />
+                May 2021 - June 2021
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="direction-l">
+              <div class="flag-wrapper">
+                <span class="hexa"></span>
+                <span class="flag">Engineer Diaries</span>
+                <span class="time-wrapper"
+                  ><span class="time">Angular Developer</span></span
+                >
+              </div>
+              <div class="desc">
+                Designing and Building Official website of Engineer Diaries with
+                Angular 11 <br />
+                May 2021 - June 2021
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="row head">
+          <div class="col-12">
+            <h1><i class="fas fa-map-pin"></i> &#160;Testimonials</h1>
+          </div>
+        </div>
+        <div class="container"></div>
       </div>
-      <div id="pythonprojects" class="pytproj">
-        <div class="row justify-content-between">
-          <div class="col-lg-5 procol">
-            <div class="card-outer">
-              <div class="card-inner">
-                <div class="card-front">
-
-                  <div class="component">
-                    <h2 class="cardtitle">Desktop Assistant</h2>
-                    <p class="cardsubtitle">Pyhton</p>
-                  </div>
-                </div>
-                <div class="card-back">
-                  <p class="cardbody">
-                    A simple desktop assitant which helps in Internet Automation, as well as some small stuffs like
-                    greeting , telling time , telling date opening calculator , play songs.
-
-                  </p>
-                  <a id="github" href="https://github.com/hyvip-ai/assiatant" target="_blank"><i
-                      class="fab fa-github"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-5 procol">
-            <div class="card-outer">
-              <div class="card-inner">
-                <div class="card-front">
-
-                  <div class="component">
-                    <h2 class="cardtitle">Air Canvas</h2>
-                    <p class="cardsubtitle">Python , OpenCV</p>
-
-                  </div>
-                </div>
-                <div class="card-back">
-                  <p class="cardbody">
-                    A simple Aircanvas using python Opencv where using a bid in air a user can draw and write anything
-                    on the canvas in screen.
-                  </p>
-                  <a id="github" href="https://github.com/hyvip-ai/aircanvas" target="_blank"><i
-                      class="fab fa-github"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row justify-content-between">
-          <div class="col-lg-5 procol">
-            <div class="card-outer">
-              <div class="card-inner">
-                <div class="card-front">
-
-                  <div class="component">
-                    <h2 class="cardtitle">Hand Detection</h2>
-                    <p class="cardsubtitle">Python , Media Pipe</p>
-                  </div>
-                </div>
-                <div class="card-back">
-                  <p class="cardbody">
-                    A simple python project to detect 2 human hands.
-
-                  </p>
-                  <a id="github" href="https://github.com/hyvip-ai/handdetection" target="_blank"><i
-                      class="fab fa-github"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-5 procol">
-            <div class="card-outer">
-              <div class="card-inner">
-                <div class="card-front">
-
-                  <div class="component">
-                    <h2 class="cardtitle">Harry Potter Cloak</h2>
-                    <p class="cardsubtitle">Python, OpenCV</p>
-
-                  </div>
-                </div>
-                <div class="card-back">
-                  <p class="cardbody">
-                    A small python project where using one colour we can hide.
-                  </p>
-                  <a id="github" href="https://github.com/hyvip-ai/harry_potter_cloak" target="_blank"><i
-                      class="fab fa-github"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
+      <div class="container-fluid">
         <div class="row justify-content-center">
-          <div class="col-lg-5 procol">
-            <div class="card-outer">
-              <div class="card-inner">
-                <div class="card-front">
-
-                  <div class="component">
-                    <h2 class="cardtitle">Tic Tac Toe</h2>
-                    <p class="cardsubtitle">C Programming</p>
-                  </div>
-                </div>
-                <div class="card-back">
-                  <p class="cardbody">
-                    A simple Tic-Tac-Toe game Using C programming Language.
-
+          <div class="col-md-8 col-md-offset-2">
+            <div class="testimonial-bg">
+              <div id="testimonial-slider" class="owl-carousel">
+                <div class="testimonial">
+                  <p class="description">
+                    I had the pleasure of mentoring Rajat since 6 months. From
+                    the first day, he impressed me with his passion for coding,
+                    web development and designing and he has my highest
+                    recommendation as a Angular & Node.js developer along with
+                    designing skills.
                   </p>
-                  <a id="github" href="https://github.com/hyvip-ai/tictactoeC" target="_blank"><i
-                      class="fab fa-github"></i></a>
+                  <div class="pic">
+                    <img src="./assets/surajMondal.jpeg" alt="Suraj Mondal" />
+                  </div>
+                  <h3 class="title">Suraj Mondal</h3>
+                  <br />
+                  <span class="post"
+                    >Senior Software Engineer at LearningMate</span
+                  >
+                </div>
+                <div class="testimonial">
+                  <p class="description">
+                    Rajat worked with Engineer Diaries between the month of
+                    May'2021 to June' 2021. He was assigned the responsibility
+                    to make the UI of the site built on Angular better and make
+                    it responsive. He delivered much more than expected. He is
+                    extremely dedicated, sincere, and creative. It was a
+                    pleasure working with Rajat.
+                  </p>
+                  <div class="pic">
+                    <img
+                      src="./assets/priyankaArora.jpeg"
+                      alt="Priyanka Arora"
+                    />
+                  </div>
+                  <h3 class="title">Priyanka Arora</h3>
+                  <br />
+                  <span class="post"
+                    >Automation Trainer | Engineer Diaries</span
+                  >
+                </div>
+                <div class="testimonial">
+                  <p class="description">
+                    Being Rajat's college senior I know him from the early days
+                    of his college life. He is very enthusiastic and always
+                    craving to learn new things. However, I found out he is
+                    mostly interested in Full-stack Development and continuously
+                    learning and applying his skills through internships in
+                    reputed organisations.
+                  </p>
+                  <div class="pic">
+                    <img
+                      src="./assets/satrajeetBaqnerjee.jpeg"
+                      alt="Satrajeet Banerjee"
+                    />
+                  </div>
+                  <h3 class="title">Satrajeet Banerjee</h3>
+                  <br />
+                  <span class="post"
+                    >Programmer Analyst Trainee at Cognizant</span
+                  >
+                </div>
+
+                <div class="testimonial">
+                  <p class="description">
+                    I've been knowing Rajat since he was in 9th standard. He has
+                    really evolved himself by learning and adapting a lot of
+                    skills (as niche as Python programming). I would like to
+                    recommend this hardworking guy.
+                  </p>
+                  <div class="pic">
+                    <img src="./assets/AbhisehkBag.jpeg" alt="Abhisek Bag" />
+                  </div>
+                  <h3 class="title">Abhisek Bag</h3>
+                  <br />
+                  <span class="post"
+                    >Software Engineer at Tata Consultancy Services</span
+                  >
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="row head">
+    </div>
+    <div id="modal" class="moel">
+      <div class="imdiv">
+        <img src="" class="modalimage" alt="Image" />
+      </div>
+      <button class="closingbtn" onclick="closemodal()">&#10005;</button>
+    </div>
+    <div class="container contact">
+      <div class="row contactlink">
         <div class="col-12">
-          <h1>
-            <i class="fas fa-map-pin"></i> &#160;Work Experience
-          </h1>
-        </div>
-
-      </div>
-
-
-      <ul class="timeline" style="margin-bottom: 60px">
-
-
-
-
-        <li>
-          <div class="direction-r">
-            <div class="flag-wrapper">
-              <span class="hexa"></span>
-              <span class="flag">AGPayTech</span>
-              <span class="time-wrapper"><span class="time">Junior Angular Developer</span></span>
-            </div>
-            <div class="desc">August 2021 - Present</div>
-          </div>
-        </li>
-
-
-        <li>
-          <div class="direction-l">
-            <div class="flag-wrapper">
-              <span class="hexa"></span>
-              <span class="flag">Upjao AgroTech</span>
-              <span class="time-wrapper"><span class="time">Full Stack Developer</span></span>
-            </div>
-            <div class="desc">Building an Admin Panel with Angular and Firebase <br> June 2021 - Aug 2021</div>
-          </div>
-        </li>
-
-
-        <li>
-          <div class="direction-r">
-            <div class="flag-wrapper">
-              <span class="hexa"></span>
-              <span class="flag">Srchout</span>
-              <span class="time-wrapper"><span class="time">Full Stack Developer</span></span>
-            </div>
-            <div class="desc">Designing and building an E-Learning Website with Html, Css , JS and Laravel. <br> May
-              2021 - June 2021</div>
-          </div>
-        </li>
-
-
-
-        <li>
-          <div class="direction-l">
-            <div class="flag-wrapper">
-              <span class="hexa"></span>
-              <span class="flag">Engineer Diaries</span>
-              <span class="time-wrapper"><span class="time">Angular Developer</span></span>
-            </div>
-            <div class="desc">Designing and Building Official website of Engineer Diaries with Angular 11 <br> May 2021
-              - June 2021</div>
-          </div>
-        </li>
-      </ul>
-      <div class="row head">
-        <div class="col-12">
-          <h1>
-            <i class="fas fa-map-pin"></i> &#160;Testimonials
-          </h1>
+          <h1><a name="contact">Contact Me</a></h1>
         </div>
       </div>
-  <div class="container">
-
-
-    </div>
-  </div>
-  <div class="container-fluid">
-      <div class="row justify-content-center">
-        <div class="col-md-8 col-md-offset-2">
-            <div class="testimonial-bg">
-                <div id="testimonial-slider" class="owl-carousel">
-                   <div class="testimonial">
-                        <p class="description">
-                           I had the pleasure of mentoring Rajat since 6 months. From the first day, he impressed me with his passion for coding, web development and designing and he has my highest recommendation as a Angular & Node.js developer along with designing skills.
-                        </p>
-                        <div class="pic">
-                            <img src="./assets/surajMondal.jpeg" alt="Suraj Mondal">
-                        </div>
-                        <h3 class="title">Suraj Mondal</h3> <br>
-                        <span class="post">Senior Software Engineer at LearningMate</span>
-                    </div>
-                     <div class="testimonial">
-                        <p class="description">
-                            Rajat worked with Engineer Diaries between the month of May'2021 to June' 2021. He was assigned the responsibility to make the UI of the site built on Angular better and make it responsive. He delivered much more than expected. He is extremely dedicated, sincere, and creative. It was a pleasure working with Rajat.
-                        </p>
-                        <div class="pic">
-                            <img src="./assets/priyankaArora.jpeg" alt="Priyanka Arora">
-                        </div>
-                        <h3 class="title">Priyanka Arora</h3> <br>
-                        <span class="post">Automation Trainer | Engineer Diaries</span>
-                    </div>
-                    <div class="testimonial">
-                        <p class="description">
-                            Being Rajat's college senior I know him from the early days of his college life. He is very enthusiastic and always craving to learn new things. However, I found out he is mostly interested in Full-stack Development and continuously learning and applying his skills through internships in reputed organisations.
-                        </p>
-                        <div class="pic">
-                            <img src="./assets/satrajeetBaqnerjee.jpeg" alt="Satrajeet Banerjee">
-                        </div>
-                        <h3 class="title">Satrajeet Banerjee</h3> <br>
-                        <span class="post">Programmer Analyst Trainee at Cognizant</span>
-                    </div>
- 
-                    <div class="testimonial">
-                        <p class="description">
-                            I've been knowing Rajat since he was in 9th standard. He has really evolved himself by learning and adapting a lot of skills (as niche as Python programming). I would like to recommend this hardworking guy.
-                        </p>
-                        <div class="pic">
-                            <img src="./assets/AbhisehkBag.jpeg" alt="Abhisek Bag">
-                        </div>
-                        <h3 class="title">Abhisek Bag</h3> <br>
-                        <span class="post">Software Engineer at Tata Consultancy Services</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-</div>
-  <div id="modal" class="moel">
-    <div class="imdiv">
-      <img src="" class="modalimage" alt="Image" />
-    </div>
-    <button class="closingbtn" onclick="closemodal()">&#10005;</button>
-  </div>
-  <div class="container contact">
-    <div class="row contactlink">
-      <div class="col-12">
-        <h1><a name="contact">Contact Me</a></h1>
-      </div>
-    </div>
-<!--     <div class="row">
+      <!--     <div class="row">
        <div class="container">
            <div id="map"></div>
        </div>
     </div> -->
-    <div class="row">
-      <h1>Personal Information</h1>
-      <div class="col-md-6">
-        <div class="infocard">
-          <div class="icon">
-            <i class="fas fa-map-marked-alt"></i>
-          </div>
-          <div class="data">
-           <div>
-            <div class="left">Location:</div>
-            <div class="right">Kolkata, West Bengal</div>
-           </div>
-           <div>
-            <div class="left">Country:</div>
-            <div class="right">India</div>
-           </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="infocard">
-          <div class="icon">
-            <i class="fas fa-envelope"></i>
-          </div>
-          <div class="data">
-            <div>
-              <div class="left">Email:</div>
-              <div class="right"><a href="mailto:rm2932002@gamil.com">rm2932002@gmail.com</a></div>
+      <div class="row">
+        <h1>Personal Information</h1>
+        <div class="col-md-6">
+          <div class="infocard">
+            <div class="icon">
+              <i class="fas fa-map-marked-alt"></i>
             </div>
-            <div>
-              <div class="left">Mobile:</div>
-              <div class="right"><a href="tel:6289703125">+916289703125</a></div>
-            </div>
-            <div>
-              <div class="left">Website:</div>
-              <div class="right"><a href="https://rajatmondalportfolio.netlify.app">My Portfolio</a></div>
+            <div class="data">
+              <div>
+                <div class="left">Location:</div>
+                <div class="right">Kolkata, West Bengal</div>
+              </div>
+              <div>
+                <div class="left">Country:</div>
+                <div class="right">India</div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-    <div class="row" style="padding:20px;">
-      <h1>Leave A Message</h1>
-      <div class="contactbox">
-        <div class="row">
-          <div class="col-md-5" onclick="showMessegeges()">
-
-            <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_9wjm14ni.json" background="transparent"
-              speed="1" loop="" autoplay=""></lottie-player>
-
-          </div>
-          <div class="col-md-7">
-            <form method="POST" data-netlify="true">
-              <input type="text" name="name" id="name" placeholder="NAME">
-              <input type="text" id="phone" name="phone" placeholder="PHONE">
-              <input type="text" id="email" name="email" placeholder="EMAIL">
-              <textarea id="msg" rows="3" name="msg" placeholder="MESSEGE"></textarea>
-              <button type="submit" class="mailsend">SEND</button>
-            </form>
-          </div>
-        </div>
-
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-12"
-        style="text-align: center;font-size: 22px;font-weight: bolder;font-family: 'Charmonman', cursive;color: #2c3e50;">
-        OR</div>
-      <div class="col-12">
-        <a href="tel:6289703125" class="formbutton2">Call Me</a>
-      </div>
-    </div>
-  </div>
-  <div class="footer">
-    <div class="container-fluid">
-      <div class="container">
-        <div class="row showit">
-          <div class="col-12" style="display: flex;justify-content: space-evenly;">
-            <a href="https://facebook.com/rajat.mondal.12935" target="_blank"><i class="fab fa-facebook-f"></i></a><a
-              href="https://www.linkedin.com/in/rajat-mondal-a7abb8199/" target="_blank"><i
-                class="fab fa-linkedin-in"></i></a><a href="https://github.com/hyvip-ai" target="_blank"><i
-                class="fab fa-github"></i></a><a href="https://www.instagram.com/thr_art_wall/" target="_blank"><i
-                class="fab fa-instagram"></i></a>
-            <a href="https://www.hackerrank.com/rm2932002" target="_blank"><i class="fab fa-hackerrank"></i></a>
-          </div>
-        </div>
-        <div class="row showit" style="height: 60px">
-          <div class="col-12" style="pointer-events: none">
-            @Copyright <b>Rajat</b>.
-            Designed by <b style="color: #1dd1a1;">Rajat</b> with ❤️
+        <div class="col-md-6">
+          <div class="infocard">
+            <div class="icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="data">
+              <div>
+                <div class="left">Email:</div>
+                <div class="right">
+                  <a href="mailto:rm2932002@gamil.com">rm2932002@gmail.com</a>
+                </div>
+              </div>
+              <div>
+                <div class="left">Mobile:</div>
+                <div class="right">
+                  <a href="tel:6289703125">+916289703125</a>
+                </div>
+              </div>
+              <div>
+                <div class="left">Website:</div>
+                <div class="right">
+                  <a href="https://rajatmondalportfolio.netlify.app"
+                    >My Portfolio</a
+                  >
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+      <div class="row" style="padding: 20px">
+        <h1>Leave A Message</h1>
+        <div class="contactbox">
+          <div class="row">
+            <div class="col-md-5" onclick="showMessegeges()">
+              <lottie-player
+                src="https://assets9.lottiefiles.com/packages/lf20_9wjm14ni.json"
+                background="transparent"
+                speed="1"
+                loop=""
+                autoplay=""
+              ></lottie-player>
+            </div>
+            <div class="col-md-7">
+              <form method="POST" data-netlify="true">
+                <input type="text" name="name" id="name" placeholder="NAME" />
+                <input
+                  type="text"
+                  id="phone"
+                  name="phone"
+                  placeholder="PHONE"
+                />
+                <input
+                  type="text"
+                  id="email"
+                  name="email"
+                  placeholder="EMAIL"
+                />
+                <textarea
+                  id="msg"
+                  rows="3"
+                  name="msg"
+                  placeholder="MESSEGE"
+                ></textarea>
+                <button type="submit" class="mailsend">SEND</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div
+          class="col-12"
+          style="
+            text-align: center;
+            font-size: 22px;
+            font-weight: bolder;
+            font-family: 'Charmonman', cursive;
+            color: #2c3e50;
+          "
+        >
+          OR
+        </div>
+        <div class="col-12">
+          <a href="tel:6289703125" class="formbutton2">Call Me</a>
+        </div>
+      </div>
     </div>
-  </div>
- 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.0/typed.min.js" integrity="sha512-zKaK6G2LZC5YZTX0vKmD7xOwd1zrEEMal4zlTf5Ved/A1RrnW+qt8pWDfo7oz+xeChECS/P9dv6EDwwPwelFfQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script defer src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/CSSPlugin.min.js"></script>
-  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TimelineLite.min.js"></script>
-  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenLite.min.js"></script>
-  <script defer src="./assets/jquery.roadmap.min.js" type="text/javascript"></script>
-  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
-  <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
-  <script defer src="app.js"></script>
-</body>
+    <div class="footer">
+      <div class="container-fluid">
+        <div class="container">
+          <div class="row showit">
+            <div
+              class="col-12"
+              style="display: flex; justify-content: space-evenly"
+            >
+              <a href="https://facebook.com/rajat.mondal.12935" target="_blank"
+                ><i class="fab fa-facebook-f"></i></a
+              ><a
+                href="https://www.linkedin.com/in/rajat-mondal-a7abb8199/"
+                target="_blank"
+                ><i class="fab fa-linkedin-in"></i></a
+              ><a href="https://github.com/hyvip-ai" target="_blank"
+                ><i class="fab fa-github"></i></a
+              ><a href="https://www.instagram.com/thr_art_wall/" target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="https://www.hackerrank.com/rm2932002" target="_blank"
+                ><i class="fab fa-hackerrank"></i
+              ></a>
+            </div>
+          </div>
+          <div class="row showit" style="height: 60px">
+            <div class="col-12" style="pointer-events: none">
+              @Copyright <b>Rajat</b>. Designed by
+              <b style="color: #1dd1a1">Rajat</b> with ❤️
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.0/typed.min.js"
+      integrity="sha512-zKaK6G2LZC5YZTX0vKmD7xOwd1zrEEMal4zlTf5Ved/A1RrnW+qt8pWDfo7oz+xeChECS/P9dv6EDwwPwelFfQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      defer
+      src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"
+    ></script>
+    <script
+      defer
+      src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"
+    ></script>
+    <script
+      defer
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/CSSPlugin.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TimelineLite.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenLite.min.js"
+    ></script>
+    <script
+      defer
+      src="./assets/jquery.roadmap.min.js"
+      type="text/javascript"
+    ></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"
+    ></script>
+    <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"
+    ></script>
+    <script defer src="app.js"></script>
+  </body>
 </html>
