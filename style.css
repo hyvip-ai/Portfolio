@@ -26,7 +26,6 @@ body {
   display: block;
 }
 .progress_bar {
-
   background: linear-gradient(
     to right,
     #185a9d,
@@ -783,7 +782,6 @@ i {
   font-weight: bolder;
 }
 
-
 .certificates {
   margin-top: 120px;
 }
@@ -803,14 +801,14 @@ i {
   border-bottom: 3px solid #2c3e50;
   font-weight: bolder;
 }
-.certificaterow{
+.certificaterow {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
 }
-.certificaterow .certificate{
+.certificaterow .certificate {
   width: 30%;
   overflow: hidden;
   margin-bottom: 50px;
@@ -818,27 +816,27 @@ i {
   position: relative;
 }
 
-.certificaterow .certificate img{
+.certificaterow .certificate img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.certificate:hover .certificate-content{
+.certificate:hover .certificate-content {
   top: 0%;
 }
-.certificate:hover .certificate-content-top{
+.certificate:hover .certificate-content-top {
   bottom: 0%;
 }
-.certificate:hover .certificate-content-left{
+.certificate:hover .certificate-content-left {
   right: 0%;
 }
-.certificate:hover .certificate-content-right{
+.certificate:hover .certificate-content-right {
   left: 0%;
 }
 .certificate .certificate-content,
 .certificate .certificate-content-top,
 .certificate .certificate-content-left,
-.certificate .certificate-content-right{
+.certificate .certificate-content-right {
   position: absolute;
 
   background-color: rgba(0, 0, 0, 0.7);
@@ -852,19 +850,19 @@ i {
   padding: 0px 10px;
   transition: all 0.5s;
 }
-.certificate .certificate-content{
+.certificate .certificate-content {
   top: 100%;
   left: 0;
 }
-.certificate .certificate-content-top{
+.certificate .certificate-content-top {
   bottom: 100%;
   left: 0;
 }
-.certificate .certificate-content-left{
+.certificate .certificate-content-left {
   right: 100%;
   top: 0%;
 }
-.certificate .certificate-content-right{
+.certificate .certificate-content-right {
   left: 100%;
   top: 0%;
 }
@@ -872,21 +870,20 @@ i {
 .certificate .certificate-content h4,
 .certificate .certificate-content-top h4,
 .certificate .certificate-content-left h4,
-.certificate .certificate-content-right h4{
+.certificate .certificate-content-right h4 {
   font-size: 18px;
-
 }
 .certificate .certificate-content p,
 .certificate .certificate-content-top p,
 .certificate .certificate-content-left p,
-.certificate .certificate-content-right p{
+.certificate .certificate-content-right p {
   font-size: 12px;
   text-align: center;
 }
 .certificate .certificate-content a,
 .certificate .certificate-content-top a,
 .certificate .certificate-content-left a,
-.certificate .certificate-content-right a{
+.certificate .certificate-content-right a {
   text-decoration: none;
   display: inline-block;
   padding: 10px;
@@ -897,9 +894,9 @@ i {
   text-align: center;
 }
 .certificate .certificate-content a:active,
-  .certificate .certificate-content-top a:active,
-  .certificate .certificate-content-left a:active,
-  .certificate .certificate-content-left a:active{
+.certificate .certificate-content-top a:active,
+.certificate .certificate-content-left a:active,
+.certificate .certificate-content-left a:active {
   transform: scale(0.9);
 }
 .abou.codingt {
@@ -1922,10 +1919,9 @@ i {
   .component {
     padding-top: 28%;
   }
-  .certificaterow .certificate{
+  .certificaterow .certificate {
     width: 45%;
   }
-  
 }
 
 @media (max-width: 1200px) {
@@ -2002,8 +1998,8 @@ i {
     display: block;
   }
 }
-@media(max-width:560px){
-  .certificaterow .certificate{
+@media (max-width: 560px) {
+  .certificaterow .certificate {
     width: 90%;
   }
 }

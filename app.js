@@ -1,142 +1,164 @@
-let scrollPositionPerentage = 0
-window.addEventListener('scroll',()=>{
-  let bodyHeight = document.documentElement.offsetHeight - document.documentElement.clientHeight;
+let scrollPositionPerentage = 0;
+window.addEventListener("scroll", () => {
+  let bodyHeight =
+    document.documentElement.offsetHeight -
+    document.documentElement.clientHeight;
   let scrollAmount = window.scrollY;
-  scrollPositionPerentage = (scrollAmount/bodyHeight)*100 
-  document.getElementById("scroll-position").style.width = `${scrollPositionPerentage}%`
-})
-console.log('%cIf You are Here, you must be a Developer!!', 'font-weight: bold; font-size: 50px;color: red; text-shadow: 3px 3px 0 rgb(217,31,38) , 6px 6px 0 rgb(226,91,14) , 9px 9px 0 rgb(245,221,8) , 12px 12px 0 rgb(5,148,68) , 15px 15px 0 rgb(2,135,206) , 18px 18px 0 rgb(4,77,145) , 21px 21px 0 rgb(42,21,113)');
+  scrollPositionPerentage = (scrollAmount / bodyHeight) * 100;
+  document.getElementById(
+    "scroll-position"
+  ).style.width = `${scrollPositionPerentage}%`;
+});
+console.log(
+  "%cIf You are Here, you must be a Developer!!",
+  "font-weight: bold; font-size: 50px;color: red; text-shadow: 3px 3px 0 rgb(217,31,38) , 6px 6px 0 rgb(226,91,14) , 9px 9px 0 rgb(245,221,8) , 12px 12px 0 rgb(5,148,68) , 15px 15px 0 rgb(2,135,206) , 18px 18px 0 rgb(4,77,145) , 21px 21px 0 rgb(42,21,113)"
+);
 document.body.scrollTop = 0;
 document.documentElement.scrollTop = 0;
-const introtl = new TimelineLite({paused:true})
-introtl.fromTo(
-  ".hidetext1",
-  0.8,
-  {
-    opacity:0,
-    y:150
-  },
-  {
-    opacity:1,
-    y:0
-  }
-).fromTo(
-  ".hidetext2",
-  0.8,
-  {
-    opacity:0,
-    y:150
-  },
-  {
-    opacity:1,
-    y:0
-  },"-=0.5"
-).fromTo(
-  ".hidetext3",
-  0.8,
-  {
-    opacity:0,
-    y:150
-  },
-  {
-    opacity:1,
-    y:0
-  },"-=0.5"
-).fromTo(
-  ".hidetext4",
-  0.8,
-  {
-    opacity:0,
-    y:150
-  },
-  {
-    opacity:1,
-    y:0
-  },"-=0.5"
-).fromTo(
-  ".hidetext5",
-  0.8,
-  {
-    opacity:0,
-    y:150
-  },
-  {
-    opacity:1,
-    y:0
-  },"-=0.5"
-).fromTo(
-  ".hidetext1",
-  0.8,
-  {
-    
-    y:0
-  },
-  {
-    
-    y:-150  
-  },"+=1"
-).fromTo(
-  ".hidetext2",
-  0.8,
-  {
-    
-    y:0
-  },
-  {
-    
-    y:-150
-    },"-=0.5"
-).fromTo(
-  ".hidetext3",
-  0.8,
-  {
-    
-    y:0
-  },
-  {
-    
-    y:-150
-    },"-=0.5"
-).fromTo(
-  ".hidetext4",
-  0.8,
-  {
-    
-    y:0
-  },
-  {
-    
-    y: -150
-   },"-=0.5"
-).fromTo(
-  ".hidetext5",
-  0.8,
-  {
-    
-    y:0
-  },
-  {
-    
-    y: -150
-   },"-=0.5"
-).fromTo(".intro2",0.5,{
-  height:"0",
-  top:"100%"
-},{
-  height:"100%",
-  top:"0%"
-}).to(".intro",0.5,{
-  display:"none"
-}).to(
-  ".intro2",0.8,{
-    height:"0%"
-  }
-)
+const introtl = new TimelineLite({ paused: true });
+introtl
+  .fromTo(
+    ".hidetext1",
+    0.8,
+    {
+      opacity: 0,
+      y: 150,
+    },
+    {
+      opacity: 1,
+      y: 0,
+    }
+  )
+  .fromTo(
+    ".hidetext2",
+    0.8,
+    {
+      opacity: 0,
+      y: 150,
+    },
+    {
+      opacity: 1,
+      y: 0,
+    },
+    "-=0.5"
+  )
+  .fromTo(
+    ".hidetext3",
+    0.8,
+    {
+      opacity: 0,
+      y: 150,
+    },
+    {
+      opacity: 1,
+      y: 0,
+    },
+    "-=0.5"
+  )
+  .fromTo(
+    ".hidetext4",
+    0.8,
+    {
+      opacity: 0,
+      y: 150,
+    },
+    {
+      opacity: 1,
+      y: 0,
+    },
+    "-=0.5"
+  )
+  .fromTo(
+    ".hidetext5",
+    0.8,
+    {
+      opacity: 0,
+      y: 150,
+    },
+    {
+      opacity: 1,
+      y: 0,
+    },
+    "-=0.5"
+  )
+  .fromTo(
+    ".hidetext1",
+    0.8,
+    {
+      y: 0,
+    },
+    {
+      y: -150,
+    },
+    "+=1"
+  )
+  .fromTo(
+    ".hidetext2",
+    0.8,
+    {
+      y: 0,
+    },
+    {
+      y: -150,
+    },
+    "-=0.5"
+  )
+  .fromTo(
+    ".hidetext3",
+    0.8,
+    {
+      y: 0,
+    },
+    {
+      y: -150,
+    },
+    "-=0.5"
+  )
+  .fromTo(
+    ".hidetext4",
+    0.8,
+    {
+      y: 0,
+    },
+    {
+      y: -150,
+    },
+    "-=0.5"
+  )
+  .fromTo(
+    ".hidetext5",
+    0.8,
+    {
+      y: 0,
+    },
+    {
+      y: -150,
+    },
+    "-=0.5"
+  )
+  .fromTo(
+    ".intro2",
+    0.5,
+    {
+      height: "0",
+      top: "100%",
+    },
+    {
+      height: "100%",
+      top: "0%",
+    }
+  )
+  .to(".intro", 0.5, {
+    display: "none",
+  })
+  .to(".intro2", 0.8, {
+    height: "0%",
+  });
 
-window.addEventListener('load',()=>{
+window.addEventListener("load", () => {
   // disableScroll();
   introtl.play();
-})
+});
 const tl = new TimelineLite({ paused: true });
 
 tl.fromTo(
@@ -164,7 +186,7 @@ var typed = new Typed(".typing", {
     "An Angular Developer.",
     "An Illustrator!",
     "A React Developer.",
-    "A Full Stack Developer"
+    "A Full Stack Developer",
   ],
   smartBackspace: true,
   backSpeed: 80,
@@ -178,7 +200,7 @@ AOS.init();
 const opa = document.getElementById("btnclick");
 const player = document.querySelector("lottie-player");
 function resume() {
-  console.log("clicked")
+  console.log("clicked");
   opa.style.opacity = "1";
   player.stop();
   player.play();
@@ -225,15 +247,12 @@ function sidenav() {
     sign1.innerHTML = "&#10005;";
 
     setTimeout(() => {
-     if(screen.width>=500){
-      circle.style.width = "1000px";
-     }
-     else{
-      circle.style.width = `${500+screen.width}px`;
-     }
-     circle.style.height = "1000px";
-
-
+      if (screen.width >= 500) {
+        circle.style.width = "1000px";
+      } else {
+        circle.style.width = `${500 + screen.width}px`;
+      }
+      circle.style.height = "1000px";
     }, 0.3);
     setTimeout(() => {
       main.style.opacity = "1";
@@ -269,8 +288,6 @@ function aboutclick() {
 
   sideopne = false;
 }
-
-
 
 const imgtl = new TimelineLite({ paused: true });
 
@@ -313,201 +330,208 @@ function closemodal() {
   // img.src = ``
 }
 $(document).ready(function () {
-
   var events = [
     {
-      date: '3/05/2021-3/06/2021',
-      content: 'Padhhigh - Content Writer'
+      date: "3/05/2021-3/06/2021",
+      content: "Padhhigh - Content Writer",
     },
     {
-      date: '17/05/2021-16/06/2021',
-      content: 'Engineer Diaries - Angular Developer'
+      date: "17/05/2021-16/06/2021",
+      content: "Engineer Diaries - Angular Developer",
     },
     {
-      date: '29/05/2020 - 28/06/2021',
-      content: 'Srchout - Full Stack Developer'
+      date: "29/05/2020 - 28/06/2021",
+      content: "Srchout - Full Stack Developer",
     },
     {
-      date: '17/06/2021 - 16/08/2021',
-      content: 'Upjao - Full Stack Developer'
+      date: "17/06/2021 - 16/08/2021",
+      content: "Upjao - Full Stack Developer",
     },
     {
-      date:'18/08/2021 - PRESENT',
-      content:'AGPayTech - Junior Angular Developer'
-    }
-
-
-
-
-
+      date: "18/08/2021 - PRESENT",
+      content: "AGPayTech - Junior Angular Developer",
+    },
   ];
 
-  $('#my-timeline').roadmap(events, {
+  $("#my-timeline").roadmap(events, {
     eventsPerSlide: 5,
     slide: 1,
 
     prevArrow: '<i class="fas fa-angle-left"></i>',
 
-
     nextArrow: '<i class="fas fa-angle-right"></i>',
-    orientation: 'auto'
-
+    orientation: "auto",
   });
 });
 
-var front = document.getElementById("front")
-var api = document.getElementById("api")
-var full = document.getElementById("full")
-var python = document.getElementById("python")
-var art = document.getElementById("art")
-var pypro = document.getElementById("pythonprojects")
-var fupro = document.getElementById("fullprojects")
-var apipro = document.getElementById("apiproject")
-var fropro = document.getElementById("frontprojects")
-var artpro = document.getElementById("arts")
+var front = document.getElementById("front");
+var api = document.getElementById("api");
+var full = document.getElementById("full");
+var python = document.getElementById("python");
+var art = document.getElementById("art");
+var pypro = document.getElementById("pythonprojects");
+var fupro = document.getElementById("fullprojects");
+var apipro = document.getElementById("apiproject");
+var fropro = document.getElementById("frontprojects");
+var artpro = document.getElementById("arts");
 
 front.addEventListener("click", () => {
-  console.log("clicked")
-  front.classList.remove("worksactive")
-  api.classList.remove("worksactive")
-  full.classList.remove("worksactive")
-  python.classList.remove("worksactive")
-  art.classList.remove("worksactive")
-  front.classList.add("worksactive")
-  fropro.style.display = "none"
-  artpro.style.display = "none"
-  fupro.style.display = "none"
-  pypro.style.display = "none"
-  apipro.style.display = "none"
+  console.log("clicked");
+  front.classList.remove("worksactive");
+  api.classList.remove("worksactive");
+  full.classList.remove("worksactive");
+  python.classList.remove("worksactive");
+  art.classList.remove("worksactive");
+  front.classList.add("worksactive");
+  fropro.style.display = "none";
+  artpro.style.display = "none";
+  fupro.style.display = "none";
+  pypro.style.display = "none";
+  apipro.style.display = "none";
   const frtl = new TimelineLite();
-  frtl.fromTo(`.frontproj`,0.5,{
-    display:"none",
-    opacity:0,
-    x:-250
-  },{
-    
-    opacity:1,
-    x:0,
-    display:"block",
-  })
-})
+  frtl.fromTo(
+    `.frontproj`,
+    0.5,
+    {
+      display: "none",
+      opacity: 0,
+      x: -250,
+    },
+    {
+      opacity: 1,
+      x: 0,
+      display: "block",
+    }
+  );
+});
 api.addEventListener("click", () => {
-  console.log("clicked")
-  front.classList.remove("worksactive")
-  api.classList.remove("worksactive")
-  full.classList.remove("worksactive")
-  python.classList.remove("worksactive")
-  art.classList.remove("worksactive")
-  api.classList.add("worksactive")
-  fropro.style.display = "none"
-  artpro.style.display = "none"
-  fupro.style.display = "none"
-  pypro.style.display = "none"
-  apipro.style.display = "none"
+  console.log("clicked");
+  front.classList.remove("worksactive");
+  api.classList.remove("worksactive");
+  full.classList.remove("worksactive");
+  python.classList.remove("worksactive");
+  art.classList.remove("worksactive");
+  api.classList.add("worksactive");
+  fropro.style.display = "none";
+  artpro.style.display = "none";
+  fupro.style.display = "none";
+  pypro.style.display = "none";
+  apipro.style.display = "none";
   const jatl = new TimelineLite();
-  jatl.fromTo(`.apisprojectsdiv`,0.5,{
-    display:"none",
-    opacity:0,
-    x:-250
-  },{
-    
-    opacity:1,
-    x:0,
-    display:"block",
-  })
- 
- 
-})
+  jatl.fromTo(
+    `.apisprojectsdiv`,
+    0.5,
+    {
+      display: "none",
+      opacity: 0,
+      x: -250,
+    },
+    {
+      opacity: 1,
+      x: 0,
+      display: "block",
+    }
+  );
+});
 full.addEventListener("click", () => {
-  console.log("clicked")
-  front.classList.remove("worksactive")
-  api.classList.remove("worksactive")
-  full.classList.remove("worksactive")
-  python.classList.remove("worksactive")
-  art.classList.remove("worksactive")
-  full.classList.add("worksactive")
-  fropro.style.display = "none"
-  artpro.style.display = "none"
-  fupro.style.display = "none"
-  pypro.style.display = "none"
-  apipro.style.display = "none"
-  const ntl = new TimelineLite()
-  ntl.fromTo(`.fullstack`,0.5,{
-    display:"none",
-    opacity:0,
-    x:-250
-  },{
-    
-    opacity:1,
-    x:0,
-    display:"block",
-  })
-})
+  console.log("clicked");
+  front.classList.remove("worksactive");
+  api.classList.remove("worksactive");
+  full.classList.remove("worksactive");
+  python.classList.remove("worksactive");
+  art.classList.remove("worksactive");
+  full.classList.add("worksactive");
+  fropro.style.display = "none";
+  artpro.style.display = "none";
+  fupro.style.display = "none";
+  pypro.style.display = "none";
+  apipro.style.display = "none";
+  const ntl = new TimelineLite();
+  ntl.fromTo(
+    `.fullstack`,
+    0.5,
+    {
+      display: "none",
+      opacity: 0,
+      x: -250,
+    },
+    {
+      opacity: 1,
+      x: 0,
+      display: "block",
+    }
+  );
+});
 python.addEventListener("click", () => {
-  console.log("clicked")
-  front.classList.remove("worksactive")
-  api.classList.remove("worksactive")
-  full.classList.remove("worksactive")
-  python.classList.remove("worksactive")
-  art.classList.remove("worksactive")
-  python.classList.add("worksactive")
-  fropro.style.display = "none"
-  artpro.style.display = "none"
-  fupro.style.display = "none"
-  pypro.style.display = "none"
-  apipro.style.display = "none"
-  const ptl = new TimelineLite()
+  console.log("clicked");
+  front.classList.remove("worksactive");
+  api.classList.remove("worksactive");
+  full.classList.remove("worksactive");
+  python.classList.remove("worksactive");
+  art.classList.remove("worksactive");
+  python.classList.add("worksactive");
+  fropro.style.display = "none";
+  artpro.style.display = "none";
+  fupro.style.display = "none";
+  pypro.style.display = "none";
+  apipro.style.display = "none";
+  const ptl = new TimelineLite();
 
-  ptl.fromTo(`.pytproj`,0.5,{
-    display:"none",
-    opacity:0,
-    x:-250
-  },{
-    
-    opacity:1,
-    x:0,
-    display:"block",
-  })
-})
+  ptl.fromTo(
+    `.pytproj`,
+    0.5,
+    {
+      display: "none",
+      opacity: 0,
+      x: -250,
+    },
+    {
+      opacity: 1,
+      x: 0,
+      display: "block",
+    }
+  );
+});
 art.addEventListener("click", () => {
-  console.log("clicked")
-  front.classList.remove("worksactive")
-  api.classList.remove("worksactive")
-  full.classList.remove("worksactive")
-  python.classList.remove("worksactive")
-  art.classList.remove("worksactive")
-  art.classList.add("worksactive")
-   fropro.style.display = "none"
-  artpro.style.display = "none"
-  fupro.style.display = "none"
-  pypro.style.display = "none"
-  apipro.style.display = "none"
-  const ptl = new TimelineLite()
+  console.log("clicked");
+  front.classList.remove("worksactive");
+  api.classList.remove("worksactive");
+  full.classList.remove("worksactive");
+  python.classList.remove("worksactive");
+  art.classList.remove("worksactive");
+  art.classList.add("worksactive");
+  fropro.style.display = "none";
+  artpro.style.display = "none";
+  fupro.style.display = "none";
+  pypro.style.display = "none";
+  apipro.style.display = "none";
+  const ptl = new TimelineLite();
 
-  ptl.fromTo(`.artclass`,0.5,{
-    display:"none",
-    opacity:0,
-    x:-250
-  },{
-    
-    opacity:1,
-    x:0,
-    display:"block",
-  })
-})
+  ptl.fromTo(
+    `.artclass`,
+    0.5,
+    {
+      display: "none",
+      opacity: 0,
+      x: -250,
+    },
+    {
+      opacity: 1,
+      x: 0,
+      display: "block",
+    }
+  );
+});
 
 $("#testimonial-slider").owlCarousel({
-        items:1,
-        itemsDesktop:[1000,1],
-        itemsDesktopSmall:[979,1],
-        itemsTablet:[768,1],
-        pagination:true,
-        navigation:false,
-        navigationText:["",""],
-        autoPlay:true,
-        autoplayTimeout:3000,
-        autoplayHoverPause:true
-    });
-
-
-
+  items: 1,
+  itemsDesktop: [1000, 1],
+  itemsDesktopSmall: [979, 1],
+  itemsTablet: [768, 1],
+  pagination: true,
+  navigation: false,
+  navigationText: ["", ""],
+  autoPlay: true,
+  autoplayTimeout: 3000,
+  autoplayHoverPause: true,
+});
