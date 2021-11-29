@@ -1224,7 +1224,7 @@ i {
   border-radius: 15px;
 }
 .works .container .myimg .col-lg-3:nth-child(1) .innerimg {
-  background-image: url(./assets/d1.png);
+  background-image: url(./assets/d1.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -1232,7 +1232,7 @@ i {
   height: 500px;
 }
 .works .container .myimg .col-lg-3:nth-child(2) .innerimg {
-  background-image: url(./assets/d2.png);
+  background-image: url(./assets/d2.webp);
   background-repeat: no-repeat;
   background-position: center;
 
@@ -1240,7 +1240,7 @@ i {
   height: 500px;
 }
 .works .container .myimg .col-lg-3:nth-child(3) .innerimg {
-  background-image: url(./assets/d3.png);
+  background-image: url(./assets/d3.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -1255,7 +1255,7 @@ i {
   border-radius: 15px;
 }
 .works .container .myimg2 .col-lg-3:nth-child(1) .innerimg {
-  background-image: url(./assets/d4.png);
+  background-image: url(./assets/d4.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -1271,7 +1271,7 @@ i {
   height: 500px;
 }
 .works .container .myimg2 .col-lg-3:nth-child(3) .innerimg {
-  background-image: url(./assets/d6.png);
+  background-image: url(./assets/d6.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -1286,21 +1286,21 @@ i {
   border-radius: 15px;
 }
 .works .container .myimg3 .col-lg-3:nth-child(1) .innerimg {
-  background-image: url(./assets/d7.png);
+  background-image: url(./assets/d7.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
   height: 500px;
 }
 .works .container .myimg3 .col-lg-3:nth-child(2) .innerimg {
-  background-image: url(./assets/d8.png);
+  background-image: url(./assets/d8.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
   height: 500px;
 }
 .works .container .myimg3 .col-lg-3:nth-child(3) .innerimg {
-  background-image: url(./assets/d9.png);
+  background-image: url(./assets/d9.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
