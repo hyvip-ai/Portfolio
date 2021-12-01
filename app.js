@@ -319,7 +319,7 @@ function openimage(num) {
   // windo
   console.log("funtion triggered");
   var img = document.querySelector(".modalimage");
-  img.src = `./assets/d${num}.png`;
+  img.src = `./assets/d${num}.webp`;
   imgtl.restart();
 }
 function closemodal() {
